@@ -15,7 +15,7 @@ Full project rules (methodology, leakage rules, experiment grid, decision log) l
 | Kawin K. | Data preprocessing and EDA |
 | Punnatorn B. | Model training and tuning |
 | Chavaphon I. | Evaluation and interpretation |
-| Sittipon P. | Demo and presentation |
+| Sittipon P. | Demo |
 
 ## Setup
 
@@ -47,7 +47,7 @@ data/raw/            original Kaggle CSV (not committed)
 data/processed/      cleaned data
 src/                 config, data, features, eda, baseline, train, evaluate, interpret
 models/              saved pipelines (not committed)
-reports/figures/     plots for slides
+reports/figures/     generated plots
 reports/results/     metric tables
 app/                 Streamlit demo
 ```
@@ -58,9 +58,8 @@ app/                 Streamlit demo
 |---|---|
 | 4–12 Nov | Data cleaning, EDA, baseline |
 | 13–19 Nov | Train LR / RF / XGBoost, tune |
-| 20–22 Nov | Evaluate, interpret, demo, slides |
-| **23 Nov 23:59** | **Submit slides and demo** |
-| 24 Nov | Presentation |
+| 20–22 Nov | Evaluate, interpret, demo |
+| **23 Nov 23:59** | **Deadline** |
 
 ## Workflow
 
