@@ -179,5 +179,10 @@ Plus the majority-class baseline (predicts `No` for everyone: about 73% accuracy
 - Odd values: drop if 2% or less of rows, otherwise flag, set to missing and impute (see Known data issues)
 - Ordinal order: Health condition worst → best, Family background lowest → highest; fall back to one-hot if labels have no clear order
 - Demo: best CV-recall model per feature set, `no_health` by default with a toggle to `full`
+- Health_condition is one-hot, not ordinal: its labels (Critical / Abnormal / Normal / Good) have no clear order between Normal and Good
+- Odd values: 42 rows with semester 0 + 2 with cost 0 = 44 rows (0.99%, 10 Yes / 34 No), under 2%, so they are dropped (4,420 rows remain)
+- EDA runs on the full cleaned dataset: it only describes the data and selects no model settings
+- The fixed split is saved to `data/processed/train.csv` / `test.csv` (via `python -m src.data`) so every member uses the same rows
+- Python 3.11+ is required (pinned pandas 3.x); tested on 3.14
 
 Add new decisions here with a one-line reason.
