@@ -7,6 +7,9 @@ Reminder: the model is a screening aid, not a diagnosis.
 """
 from pathlib import Path
 
+from sklearn.metrics import f1_score, make_scorer, precision_score
+from sklearn.model_selection import StratifiedKFold
+
 # ---------------------------------------------------------------- paths
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -29,6 +32,26 @@ RAW_ENCODING = "utf-8-sig"
 RANDOM_STATE = 42
 TEST_SIZE = 0.2
 CV_FOLDS = 5
+
+# ---------------------------------------------------------------- cross-validation
+# Shared by src/baseline.py and src/train.py so every model is scored the same
+# way. train.py passes CV_SCORING to the search with refit="recall".
+# Recall is the priority metric; accuracy is only ever reported next to the others.
+CV_METRICS = ["recall", "precision", "f1", "roc_auc", "accuracy"]
+CV_SCORING = {
+    "recall": "recall",
+    # zero_division=0: a model that never predicts Yes (e.g. the majority-class
+    # baseline) scores 0 instead of raising UndefinedMetricWarning.
+    "precision": make_scorer(precision_score, zero_division=0),
+    "f1": make_scorer(f1_score, zero_division=0),
+    "roc_auc": "roc_auc",
+    "accuracy": "accuracy",
+}
+
+
+def make_cv() -> StratifiedKFold:
+    """Stratified 5-fold CV splitter with the fixed seed (training set only)."""
+    return StratifiedKFold(n_splits=CV_FOLDS, shuffle=True, random_state=RANDOM_STATE)
 
 # ---------------------------------------------------------------- target
 TARGET = "Depression"

@@ -186,5 +186,8 @@ Plus the majority-class baseline (predicts `No` for everyone: about 73% accuracy
 - Python 3.11+ is required (pinned pandas 3.x); tested on 3.14
 - The raw CSV is committed in `data/raw/` (Kawin's request) so every member has the same file without a Kaggle download
 - `data/processed/` (clean.csv, train.csv, test.csv) is also committed (Kawin's request) so everyone has the same split without running anything; re-run `python -m src.data` and commit if data.py or config.py changes
+- CV scoring and splitter are shared in `src/config.py` (`CV_SCORING`, `make_cv()`) so the baseline and every tuned model use identical CV
+- Baselines are saved as pipelines including the preprocessor, so evaluate and the demo pass raw features to every model the same way
+- Baseline uses `DummyClassifier(strategy="most_frequent")`, not `"prior"`: it predicts `No` (Yes probability 0) at any threshold, so it can never flip to predicting Yes for everyone
 
 Add new decisions here with a one-line reason.
