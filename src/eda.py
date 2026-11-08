@@ -96,6 +96,7 @@ def summary_tables(df: pd.DataFrame) -> None:
     _save_table(summary, "eda_summary_numeric", index=True)
 
     by_target = df.groupby(_with_labels(df))[C.NUMERIC_COLS].agg(["mean", "median"]).round(2)
+    by_target.columns = [f"{col}_{stat}" for col, stat in by_target.columns]
     _save_table(by_target, "eda_numeric_by_target", index=True)
 
     counts = _with_labels(df).value_counts().reindex([C.NEGATIVE_LABEL, C.POSITIVE_LABEL])
