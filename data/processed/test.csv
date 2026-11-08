@@ -1,0 +1,885 @@
+Gender,Age,Family_background,Relationship_status,Marital_status,Living_style,Current_semester,CGPA,friend_circle,Health_condition,Cost_without_study,Home_division,Depression
+Female,24,Lower Middle class,Single,Unmarried,Bachelor,3,3.62,Yes,Normal,7500,Mymensingh,0
+Female,23,Middle class,Single,Unmarried,Bachelor,2,3.67,Yes,Critical,15518,Chittagong,1
+Male,20,Lower Middle class,Single,Unmarried,Bachelor,2,2.54,Yes,Normal,5969,Rajshahi,0
+Female,20,Middle class,Single,Unmarried,Bachelor,3,3.7,Yes,Good,12684,Khulna,0
+Male,21,Lower Middle class,Single,Unmarried,Bachelor,6,3.27,Yes,Good,9400,Dhaka,0
+Male,22,Middle class,In a Relationship,Unmarried,Family,2,3.3,Yes,Good,15860,Rajshahi,0
+Male,24,Lower Middle class,Single,Unmarried,Bachelor,4,3.49,Yes,Normal,4650,Mymensingh,0
+Female,21,Middle class,Single,Separated,Bachelor,3,3.86,Yes,Normal,15259,Rajshahi,0
+Female,18,Middle class,In a Relationship,Unmarried,Family,4,2.66,Yes,Critical,15000,Barisal,1
+Male,25,Lower Middle class,Single,Unmarried,Bachelor,7,3.89,Yes,Good,4900,Khulna,0
+Female,23,Middle class,In a Relationship,Unmarried,Family,6,3.5,Yes,Good,10000,Barisal,0
+Female,21,Middle class,In a Relationship,Unmarried,Family,4,3.7,Yes,Good,8000,Rangpur,0
+Male,23,Middle class,Single,Unmarried,Family,8,2.68,Yes,Normal,7200,Khulna,0
+Male,21,Lower Middle class,Single,Unmarried,Bachelor,4,3.41,Yes,Critical,8000,Dhaka,1
+Female,24,Lower Middle class,Single,Unmarried,Family,2,3.4,No,Critical,6200,Dhaka,1
+Female,24,Rich class,Single,Unmarried,Family,9,3.5,Yes,Abnormal,30000,Dhaka,0
+Female,23,Middle class,Single,Unmarried,Family,3,3.44,Yes,Normal,6900,Barisal,0
+Female,24,Middle class,Single,Unmarried,Bachelor,11,3.5,Yes,Normal,12000,Dhaka,0
+Female,20,Middle class,Single,Unmarried,Family,5,3.71,Yes,Abnormal,10000,Dhaka,1
+Female,27,Lower Middle class,In a Relationship,Married,Family,3,3.58,No,Abnormal,3092,Mymensingh,0
+Female,26,Rich class,In a Relationship,Married,Family,3,3.6,Yes,Abnormal,12237,Dhaka,0
+Male,23,Lower Middle class,In a Relationship,Unmarried,Bachelor,3,3.15,No,Abnormal,4501,Khulna,0
+Female,23,Middle class,In a Relationship,Unmarried,Bachelor,7,3.78,No,Normal,19148,Rangpur,0
+Female,22,Middle class,Single,Unmarried,Bachelor,5,3.0,Yes,Normal,14094,Mymensingh,0
+Male,23,Middle class,In a Relationship,Unmarried,Bachelor,7,3.67,No,Normal,15000,Chittagong,0
+Female,24,Middle class,Single,Unmarried,Family,7,3.15,Yes,Critical,19757,Dhaka,1
+Female,18,Lower Middle class,Single,Unmarried,Family,2,3.75,Yes,Normal,9587,Khulna,0
+Male,21,Lower Middle class,Single,Unmarried,Bachelor,3,3.76,Yes,Good,4200,Dhaka,0
+Male,26,Middle class,In a Relationship,Unmarried,Family,5,3.45,No,Normal,17889,Mymensingh,0
+Male,23,Middle class,Single,Unmarried,Bachelor,7,3.18,Yes,Good,4700,Barisal,0
+Female,20,Middle class,Single,Unmarried,Bachelor,5,3.78,No,Critical,13480,Rangpur,1
+Female,25,Middle class,In a Relationship,Married,Family,3,3.97,Yes,Normal,9000,Dhaka,0
+Female,25,Middle class,Single,Unmarried,Family,4,2.92,Yes,Good,7290,Dhaka,0
+Female,20,Rich class,In a Relationship,Unmarried,Bachelor,5,2.4,No,Normal,25323,Mymensingh,0
+Male,22,Lower Middle class,Single,Married,Bachelor,4,3.8,No,Abnormal,8532,Rajshahi,0
+Female,23,Lower Middle class,Single,Unmarried,Bachelor,11,3.56,Yes,Abnormal,6318,Dhaka,1
+Male,24,Lower Middle class,Single,Unmarried,Bachelor,10,3.61,Yes,Good,5250,Mymensingh,0
+Male,26,Middle class,Single,Unmarried,Family,8,3.82,Yes,Critical,17412,Dhaka,1
+Male,25,Middle class,Single,Unmarried,Family,3,3.59,No,Good,19000,Chittagong,0
+Female,23,Middle class,Single,Unmarried,Family,2,3.6,Yes,Normal,4900,Chittagong,0
+Female,23,Lower Middle class,Complicated,Separated,Bachelor,6,3.1,Yes,Critical,6908,Rajshahi,1
+Female,22,Rich class,Single,Unmarried,Family,5,2.92,Yes,Abnormal,27988,Khulna,1
+Male,23,Lower Middle class,Complicated,Unmarried,Family,6,2.93,Yes,Normal,9898,Mymensingh,0
+Female,21,Middle class,Single,Unmarried,Family,6,3.4,Yes,Good,19826,Mymensingh,0
+Female,21,Rich class,Single,Unmarried,Bachelor,4,3.21,No,Good,26000,Rangpur,0
+Male,24,Lower Middle class,Single,Unmarried,Bachelor,10,3.29,Yes,Good,3650,Mymensingh,0
+Male,21,Lower Middle class,Single,Unmarried,Bachelor,5,2.9,Yes,Critical,12200,Dhaka,1
+Male,21,Middle class,Single,Unmarried,Bachelor,3,3.26,Yes,Normal,13007,Rangpur,0
+Female,23,Middle class,Single,Unmarried,Family,8,2.95,No,Good,7800,Dhaka,0
+Female,18,Lower Middle class,Single,Unmarried,Family,3,3.12,Yes,Critical,9257,Khulna,1
+Male,21,Middle class,In a Relationship,Unmarried,Bachelor,4,3.78,Yes,Normal,10000,Dhaka,0
+Female,25,Middle class,Single,Unmarried,Family,11,2.9,Yes,Normal,7805,Dhaka,0
+Female,25,Middle class,In a Relationship,Married,Family,5,3.38,Yes,Normal,4630,Dhaka,0
+Female,22,Middle class,Single,Unmarried,Bachelor,8,3.76,Yes,Normal,11164,Dhaka,0
+Male,21,Middle class,Single,Unmarried,Bachelor,6,3.59,Yes,Good,17012,Dhaka,0
+Female,24,Lower Middle class,Single,Unmarried,Family,7,3.75,No,Abnormal,7500,Barisal,1
+Female,21,Rich class,Single,Unmarried,Bachelor,3,3.58,Yes,Normal,26000,Khulna,0
+Female,23,Middle class,Single,Unmarried,Family,5,3.56,No,Normal,6600,Dhaka,0
+Female,26,Rich class,Complicated,Married,Bachelor,10,3.89,Yes,Normal,20000,Dhaka,0
+Female,26,Rich class,In a Relationship,Married,Family,6,3.9,Yes,Good,11402,Dhaka,0
+Female,22,Middle class,Single,Unmarried,Bachelor,6,3.9,No,Abnormal,18917,Khulna,1
+Male,23,Middle class,Single,Unmarried,Bachelor,11,3.11,Yes,Normal,4200,Sylhet,0
+Male,23,Middle class,Single,Unmarried,Bachelor,7,3.15,Yes,Normal,6800,Sylhet,0
+Female,21,Middle class,Single,Unmarried,Family,5,3.79,No,Normal,19724,Dhaka,0
+Female,25,Middle class,In a Relationship,Married,Family,4,3.32,Yes,Normal,12500,Dhaka,0
+Male,20,Middle class,Single,Unmarried,Bachelor,3,3.58,No,Critical,19175,Dhaka,1
+Male,25,Middle class,Complicated,Unmarried,Family,6,3.36,No,Abnormal,14713,Sylhet,1
+Female,25,Middle class,In a Relationship,Married,Family,7,3.61,Yes,Normal,8000,Dhaka,0
+Female,23,Middle class,Single,Unmarried,Family,3,3.49,No,Critical,5900,Dhaka,1
+Male,20,Lower Middle class,Single,Unmarried,Bachelor,1,3.6,Yes,Abnormal,9837,Rajshahi,1
+Female,22,Rich class,Single,Unmarried,Family,5,3.11,Yes,Critical,3000,Rajshahi,1
+Female,23,Middle class,Single,Unmarried,Family,5,3.21,No,Normal,4400,Dhaka,0
+Female,23,Rich class,In a Relationship,Unmarried,Family,5,3.5,No,Normal,6000,Dhaka,0
+Male,21,Middle class,In a Relationship,Unmarried,Bachelor,4,3.88,Yes,Normal,12000,Dhaka,0
+Male,26,Rich class,Single,Unmarried,Family,4,3.83,Yes,Abnormal,9100,Khulna,0
+Male,22,Middle class,Single,Unmarried,Bachelor,3,3.89,Yes,Abnormal,15041,Barisal,1
+Female,24,Rich class,Single,Married,Bachelor,5,3.78,No,Abnormal,25079,Sylhet,0
+Female,25,Middle class,In a Relationship,Married,Family,8,3.79,Yes,Good,4900,Dhaka,0
+Female,20,Lower Middle class,Single,Unmarried,Bachelor,2,3.77,Yes,Good,2072,Rajshahi,0
+Male,22,Middle class,In a Relationship,Unmarried,Bachelor,2,3.49,Yes,Abnormal,17236,Rajshahi,0
+Male,22,Lower Middle class,Single,Unmarried,Bachelor,11,2.43,Yes,Normal,7700,Rangpur,0
+Female,21,Rich class,In a Relationship,Married,Family,7,3.45,Yes,Abnormal,24463,Dhaka,0
+Male,22,Middle class,Single,Unmarried,Bachelor,3,4.0,Yes,Good,18064,Rajshahi,0
+Male,20,Lower Middle class,In a Relationship,Married,Family,5,3.6,No,Normal,3000,Dhaka,0
+Male,20,Middle class,Complicated,Unmarried,Family,3,3.12,No,Good,11895,Rajshahi,0
+Female,25,Middle class,In a Relationship,Married,Family,9,3.34,Yes,Normal,3300,Dhaka,0
+Female,23,Lower Middle class,In a Relationship,Married,Family,7,3.75,Yes,Good,4366,Khulna,0
+Female,21,Middle class,In a Relationship,Unmarried,Family,4,3.6,Yes,Good,16388,Chittagong,0
+Male,20,Lower Middle class,Single,Unmarried,Bachelor,1,3.25,No,Abnormal,988,Rangpur,1
+Male,23,Middle class,Single,Unmarried,Bachelor,9,3.59,No,Good,15862,Dhaka,0
+Female,21,Middle class,Single,Unmarried,Family,9,3.7,Yes,Normal,16094,Dhaka,0
+Male,20,Middle class,Single,Unmarried,Bachelor,5,3.98,Yes,Good,16142,Khulna,0
+Male,20,Middle class,Single,Unmarried,Bachelor,5,3.59,Yes,Abnormal,10299,Khulna,1
+Female,21,Middle class,Single,Unmarried,Bachelor,4,3.89,Yes,Abnormal,14287,Dhaka,1
+Male,21,Lower Middle class,Single,Unmarried,Bachelor,2,2.8,Yes,Good,12300,Dhaka,0
+Male,21,Middle class,Single,Unmarried,Bachelor,3,3.6,No,Normal,10801,Rajshahi,0
+Female,24,Lower Middle class,Single,Unmarried,Bachelor,8,3.17,Yes,Normal,5890,Chittagong,0
+Male,21,Middle class,Single,Unmarried,Bachelor,2,2.73,No,Critical,18035,Sylhet,1
+Female,23,Middle class,In a Relationship,Unmarried,Family,3,2.75,Yes,Critical,11866,Rajshahi,1
+Female,24,Rich class,Complicated,Unmarried,Family,3,3.7,No,Good,20995,Dhaka,0
+Male,25,Middle class,Single,Unmarried,Bachelor,9,3.27,Yes,Critical,8900,Barisal,1
+Male,24,Lower Middle class,In a Relationship,Unmarried,Family,2,3.3,Yes,Good,1964,Dhaka,0
+Female,19,Lower Middle class,In a Relationship,Unmarried,Bachelor,3,3.87,No,Abnormal,10500,Chittagong,0
+Female,23,Middle class,Single,Unmarried,Family,9,3.6,Yes,Good,6800,Rangpur,0
+Female,25,Middle class,In a Relationship,Married,Family,8,3.02,Yes,Normal,2500,Dhaka,0
+Female,20,Lower Middle class,Complicated,Unmarried,Family,3,2.8,No,Good,1434,Dhaka,0
+Female,25,Middle class,In a Relationship,Married,Family,3,3.21,Yes,Normal,7000,Dhaka,0
+Male,23,Lower Middle class,Single,Unmarried,Family,5,3.12,Yes,Normal,5000,Dhaka,0
+Female,27,Rich class,Single,Married,Bachelor,5,3.51,Yes,Abnormal,24114,Barisal,0
+Female,23,Middle class,In a Relationship,Unmarried,Bachelor,3,3.25,Yes,Critical,15000,Sylhet,1
+Male,22,Rich class,Single,Unmarried,Bachelor,5,3.59,Yes,Normal,23000,Mymensingh,0
+Male,22,Middle class,Single,Unmarried,Bachelor,8,3.48,Yes,Normal,13619,Khulna,0
+Male,20,Middle class,Single,Unmarried,Bachelor,5,3.63,Yes,Critical,10178,Khulna,1
+Male,22,Middle class,Single,Unmarried,Bachelor,4,3.58,Yes,Abnormal,18927,Khulna,1
+Male,21,Lower Middle class,Single,Unmarried,Family,4,3.57,Yes,Normal,5000,Rangpur,0
+Male,21,Rich class,Single,Unmarried,Bachelor,6,3.78,Yes,Good,26712,Dhaka,0
+Male,28,Middle class,Single,Unmarried,Bachelor,5,3.59,Yes,Normal,4866,Barisal,0
+Female,21,Rich class,In a Relationship,Unmarried,Family,6,2.9,No,Normal,28956,Khulna,0
+Male,26,Middle class,Single,Unmarried,Bachelor,7,3.67,Yes,Critical,11955,Khulna,1
+Female,27,Middle class,Single,Unmarried,Bachelor,1,3.49,Yes,Abnormal,8500,Chittagong,1
+Female,21,Middle class,In a Relationship,Unmarried,Family,3,3.4,Yes,Good,15600,Rajshahi,0
+Female,20,Middle class,Single,Unmarried,Family,9,3.71,Yes,Abnormal,11302,Dhaka,1
+Female,26,Lower Middle class,Single,Unmarried,Family,10,3.5,Yes,Abnormal,8558,Dhaka,1
+Female,22,Middle class,In a Relationship,Unmarried,Bachelor,8,3.78,Yes,Abnormal,16258,Rajshahi,0
+Male,25,Middle class,Single,Unmarried,Bachelor,8,3.31,Yes,Abnormal,13173,Khulna,1
+Female,23,Middle class,In a Relationship,Unmarried,Bachelor,4,3.69,Yes,Abnormal,2200,Dhaka,0
+Female,20,Middle class,Single,Unmarried,Family,8,3.59,Yes,Critical,15562,Dhaka,1
+Female,25,Middle class,In a Relationship,Married,Family,4,3.36,Yes,Abnormal,6000,Dhaka,0
+Female,23,Middle class,Single,Unmarried,Family,5,2.88,Yes,Good,5300,Chittagong,0
+Female,20,Middle class,Single,Unmarried,Bachelor,5,3.48,Yes,Normal,13619,Rangpur,0
+Male,21,Rich class,Single,Unmarried,Bachelor,2,3.5,Yes,Good,22775,Dhaka,0
+Female,24,Middle class,Single,Unmarried,Bachelor,9,3.75,Yes,Abnormal,12109,Dhaka,1
+Female,24,Lower Middle class,Single,Married,Bachelor,7,3.0,Yes,Abnormal,3155,Dhaka,0
+Female,19,Lower Middle class,In a Relationship,Unmarried,Family,3,3.7,No,Normal,7303,Khulna,0
+Male,24,Middle class,Single,Married,Bachelor,5,4.0,Yes,Good,14512,Khulna,0
+Male,21,Lower Middle class,In a Relationship,Unmarried,Bachelor,4,3.3,No,Good,9500,Khulna,0
+Male,24,Lower Middle class,Single,Unmarried,Bachelor,3,3.3,Yes,Normal,3700,Mymensingh,0
+Female,21,Rich class,In a Relationship,Unmarried,Bachelor,4,3.65,Yes,Critical,28749,Sylhet,1
+Male,23,Middle class,Single,Unmarried,Bachelor,6,3.2,Yes,Normal,8900,Barisal,0
+Male,23,Middle class,Single,Unmarried,Bachelor,10,3.12,Yes,Normal,5600,Barisal,0
+Female,23,Middle class,Single,Unmarried,Family,4,2.91,No,Good,6500,Dhaka,0
+Female,23,Middle class,Single,Unmarried,Family,2,3.36,Yes,Normal,8600,Dhaka,0
+Male,26,Lower Middle class,Single,Unmarried,Family,8,3.5,No,Normal,4500,Chittagong,0
+Female,20,Middle class,Single,Unmarried,Bachelor,4,3.7,Yes,Good,17068,Chittagong,0
+Female,25,Middle class,Single,Unmarried,Family,11,3.26,Yes,Normal,6700,Dhaka,0
+Female,23,Middle class,In a Relationship,Unmarried,Bachelor,4,3.23,No,Good,10000,Rajshahi,0
+Female,23,Rich class,Single,Unmarried,Family,8,3.45,No,Normal,26589,Khulna,0
+Female,23,Middle class,In a Relationship,Unmarried,Bachelor,6,3.67,Yes,Critical,2400,Sylhet,1
+Female,20,Middle class,Single,Unmarried,Bachelor,5,3.16,No,Good,11853,Rajshahi,0
+Male,21,Middle class,Single,Unmarried,Bachelor,6,3.18,No,Critical,17668,Rajshahi,1
+Female,23,Lower Middle class,Complicated,Separated,Bachelor,7,3.88,No,Normal,6500,Dhaka,0
+Male,26,Middle class,In a Relationship,Married,Bachelor,5,3.67,Yes,Good,15087,Khulna,0
+Female,23,Lower Middle class,In a Relationship,Unmarried,Bachelor,4,3.98,Yes,Normal,3337,Mymensingh,0
+Female,22,Middle class,In a Relationship,Unmarried,Bachelor,5,2.9,Yes,Critical,18523,Khulna,1
+Male,22,Lower Middle class,Single,Unmarried,Bachelor,9,3.85,Yes,Good,7800,Rangpur,0
+Female,24,Middle class,In a Relationship,Married,Family,6,3.2,Yes,Critical,12711,Mymensingh,1
+Female,21,Middle class,In a Relationship,Married,Bachelor,1,3.87,Yes,Normal,19016,Khulna,0
+Female,25,Middle class,Single,Unmarried,Family,3,2.82,Yes,Good,7523,Dhaka,0
+Female,22,Middle class,In a Relationship,Unmarried,Bachelor,4,3.44,Yes,Abnormal,14476,Mymensingh,0
+Female,24,Middle class,In a Relationship,Unmarried,Bachelor,5,3.45,Yes,Abnormal,13576,Khulna,0
+Female,24,Middle class,Single,Married,Bachelor,5,3.56,Yes,Critical,11232,Khulna,1
+Male,23,Middle class,Single,Unmarried,Family,3,3.47,Yes,Normal,15000,Rajshahi,0
+Male,23,Middle class,Single,Unmarried,Bachelor,6,4.0,Yes,Normal,18224,Dhaka,0
+Female,28,Middle class,Single,Married,Family,12,3.46,Yes,Critical,10000,Chittagong,1
+Male,21,Lower Middle class,Single,Unmarried,Bachelor,4,3.86,Yes,Normal,2700,Dhaka,0
+Male,25,Middle class,Single,Unmarried,Bachelor,7,3.35,No,Good,8600,Mymensingh,0
+Female,25,Middle class,In a Relationship,Married,Family,11,3.05,Yes,Normal,1000,Dhaka,0
+Female,23,Middle class,Single,Unmarried,Family,7,3.3,Yes,Normal,5000,Dhaka,0
+Male,20,Lower Middle class,Single,Unmarried,Bachelor,3,4.0,Yes,Abnormal,405,Rajshahi,1
+Female,23,Middle class,Single,Unmarried,Family,2,3.69,Yes,Abnormal,6600,Mymensingh,1
+Female,24,Middle class,In a Relationship,Unmarried,Family,11,3.45,Yes,Good,11828,Chittagong,0
+Male,23,Lower Middle class,Single,Unmarried,Family,10,3.5,Yes,Normal,8500,Sylhet,0
+Female,24,Middle class,Single,Unmarried,Family,7,3.36,Yes,Normal,13752,Dhaka,0
+Female,23,Middle class,In a Relationship,Married,Family,7,2.8,Yes,Abnormal,11803,Dhaka,0
+Female,20,Middle class,Complicated,Unmarried,Bachelor,4,3.44,Yes,Normal,14741,Chittagong,0
+Male,23,Middle class,Single,Unmarried,Bachelor,4,3.95,Yes,Good,9700,Sylhet,0
+Male,20,Lower Middle class,Single,Unmarried,Bachelor,2,4.0,Yes,Good,3787,Dhaka,0
+Male,20,Lower Middle class,Single,Unmarried,Bachelor,1,3.6,Yes,Critical,6537,Rajshahi,1
+Male,21,Lower Middle class,Single,Unmarried,Bachelor,3,3.62,Yes,Normal,5900,Dhaka,0
+Male,25,Middle class,Single,Unmarried,Bachelor,8,2.97,Yes,Abnormal,6700,Dhaka,1
+Male,23,Middle class,In a Relationship,Unmarried,Bachelor,8,3.78,Yes,Normal,15000,Dhaka,0
+Female,21,Rich class,In a Relationship,Unmarried,Bachelor,6,3.2,Yes,Normal,25698,Rajshahi,0
+Female,25,Middle class,In a Relationship,Married,Family,8,3.57,Yes,Normal,4500,Dhaka,0
+Male,22,Lower Middle class,Single,Unmarried,Bachelor,2,2.7,Yes,Good,4092,Rajshahi,0
+Female,23,Middle class,In a Relationship,Unmarried,Family,6,3.75,Yes,Normal,5000,Dhaka,0
+Female,23,Middle class,In a Relationship,Unmarried,Family,9,2.85,Yes,Abnormal,8000,Barisal,0
+Female,24,Lower Middle class,Single,Unmarried,Bachelor,4,3.84,Yes,Good,9856,Dhaka,0
+Male,22,Lower Middle class,Single,Unmarried,Family,4,3.2,Yes,Normal,5982,Dhaka,0
+Female,22,Middle class,Single,Unmarried,Family,3,3.0,No,Normal,12000,Rajshahi,0
+Male,21,Lower Middle class,Single,Unmarried,Bachelor,5,3.54,Yes,Normal,3100,Dhaka,0
+Female,26,Middle class,Single,Separated,Family,8,2.97,Yes,Critical,16597,Dhaka,1
+Male,21,Lower Middle class,Single,Unmarried,Bachelor,4,3.7,Yes,Normal,3900,Dhaka,0
+Male,26,Middle class,Single,Unmarried,Family,10,3.0,Yes,Abnormal,12900,Barisal,1
+Male,26,Rich class,Single,Unmarried,Family,2,3.12,Yes,Abnormal,7400,Chittagong,0
+Male,25,Lower Middle class,Single,Unmarried,Bachelor,6,3.0,Yes,Critical,1283,Sylhet,1
+Female,20,Rich class,In a Relationship,Unmarried,Bachelor,5,3.2,Yes,Abnormal,25862,Dhaka,0
+Male,22,Lower Middle class,Single,Unmarried,Bachelor,2,3.97,No,Good,108,Rangpur,0
+Female,23,Rich class,In a Relationship,Unmarried,Family,1,2.57,No,Good,20304,Rajshahi,0
+Male,19,Lower Middle class,In a Relationship,Unmarried,Family,2,2.4,No,Good,5000,Chittagong,0
+Female,24,Middle class,In a Relationship,Unmarried,Bachelor,8,3.59,Yes,Normal,19036,Dhaka,0
+Male,23,Middle class,Single,Unmarried,Family,3,2.35,No,Normal,15037,Khulna,0
+Female,25,Middle class,In a Relationship,Married,Family,10,3.57,Yes,Good,8300,Dhaka,0
+Male,22,Rich class,Single,Unmarried,Bachelor,8,3.75,Yes,Good,27000,Rajshahi,0
+Female,25,Middle class,Single,Unmarried,Bachelor,8,3.78,Yes,Abnormal,19260,Khulna,1
+Male,20,Middle class,Single,Married,Bachelor,2,3.2,Yes,Normal,15185,Khulna,0
+Female,25,Middle class,In a Relationship,Married,Family,6,2.99,Yes,Good,10073,Dhaka,0
+Female,25,Middle class,Single,Unmarried,Family,8,3.3,Yes,Critical,6700,Dhaka,1
+Male,25,Rich class,Single,Unmarried,Bachelor,8,3.88,No,Normal,23000,Rangpur,0
+Female,25,Middle class,Single,Unmarried,Family,4,3.34,Yes,Good,6500,Dhaka,0
+Female,24,Middle class,In a Relationship,Unmarried,Bachelor,6,3.76,No,Good,11275,Chittagong,0
+Female,25,Middle class,In a Relationship,Married,Family,7,3.55,Yes,Good,4200,Dhaka,0
+Male,21,Lower Middle class,Single,Unmarried,Bachelor,4,3.12,Yes,Abnormal,10900,Dhaka,1
+Male,25,Lower Middle class,In a Relationship,Unmarried,Family,9,3.7,Yes,Good,5000,Rangpur,0
+Female,23,Lower Middle class,Single,Unmarried,Bachelor,5,3.9,No,Normal,2480,Barisal,0
+Male,23,Middle class,Single,Unmarried,Family,8,3.49,Yes,Abnormal,11432,Dhaka,1
+Female,25,Middle class,In a Relationship,Married,Family,6,3.77,Yes,Normal,5700,Dhaka,0
+Female,23,Middle class,Single,Unmarried,Family,6,3.75,No,Normal,7200,Dhaka,0
+Male,25,Lower Middle class,Single,Unmarried,Bachelor,8,3.49,No,Abnormal,5600,Dhaka,1
+Female,23,Middle class,In a Relationship,Unmarried,Bachelor,5,3.9,No,Normal,11000,Dhaka,0
+Male,21,Middle class,In a Relationship,Married,Family,4,3.25,Yes,Normal,17841,Dhaka,0
+Female,24,Middle class,Single,Unmarried,Family,2,3.48,Yes,Good,7500,Dhaka,0
+Female,21,Rich class,Single,Married,Bachelor,8,3.6,No,Critical,29856,Khulna,1
+Female,23,Middle class,Single,Unmarried,Bachelor,4,3.2,Yes,Good,17000,Barisal,0
+Female,23,Middle class,Single,Unmarried,Family,4,3.81,Yes,Abnormal,4500,Dhaka,1
+Male,20,Lower Middle class,Single,Unmarried,Bachelor,3,3.14,Yes,Normal,2500,Sylhet,0
+Female,25,Rich class,In a Relationship,Separated,Bachelor,6,3.88,Yes,Good,23027,Barisal,0
+Female,19,Middle class,In a Relationship,Unmarried,Bachelor,4,3.3,Yes,Good,19780,Khulna,0
+Male,25,Middle class,Single,Unmarried,Bachelor,5,2.54,Yes,Abnormal,4600,Sylhet,1
+Male,21,Middle class,In a Relationship,Unmarried,Bachelor,8,3.8,Yes,Good,13520,Sylhet,0
+Female,24,Lower Middle class,In a Relationship,Unmarried,Bachelor,9,3.57,Yes,Abnormal,4700,Chittagong,0
+Male,24,Middle class,Single,Unmarried,Bachelor,8,3.27,Yes,Abnormal,17000,Sylhet,1
+Female,25,Middle class,In a Relationship,Married,Family,6,3.76,No,Good,5500,Sylhet,0
+Male,22,Middle class,In a Relationship,Unmarried,Bachelor,6,3.58,Yes,Good,13243,Dhaka,0
+Male,17,Lower Middle class,In a Relationship,Unmarried,Bachelor,2,3.5,No,Good,6474,Chittagong,0
+Male,22,Rich class,Single,Unmarried,Family,5,3.21,Yes,Critical,22000,Dhaka,1
+Female,26,Rich class,In a Relationship,Married,Family,5,3.3,Yes,Good,12653,Dhaka,0
+Male,20,Lower Middle class,Single,Unmarried,Bachelor,5,3.25,Yes,Normal,3752,Mymensingh,0
+Male,23,Middle class,Single,Unmarried,Bachelor,4,3.75,No,Critical,13222,Chittagong,1
+Male,23,Lower Middle class,Single,Unmarried,Bachelor,9,3.54,Yes,Normal,6700,Chittagong,0
+Female,26,Lower Middle class,In a Relationship,Unmarried,Bachelor,6,2.8,Yes,Abnormal,8679,Rajshahi,0
+Female,21,Middle class,Single,Separated,Family,6,3.0,Yes,Normal,19057,Dhaka,0
+Male,22,Middle class,Single,Unmarried,Bachelor,4,3.59,No,Abnormal,19411,Khulna,1
+Male,21,Middle class,Single,Unmarried,Bachelor,6,3.92,Yes,Good,15746,Dhaka,0
+Female,21,Middle class,Single,Unmarried,Bachelor,5,3.85,No,Normal,5200,Khulna,0
+Female,26,Lower Middle class,Complicated,Separated,Family,8,3.11,Yes,Normal,20000,Rajshahi,0
+Female,23,Lower Middle class,Single,Unmarried,Family,4,3.89,No,Critical,4252,Barisal,1
+Male,25,Middle class,Single,Unmarried,Bachelor,8,2.89,No,Good,7500,Chittagong,0
+Female,25,Middle class,In a Relationship,Married,Family,9,3.12,Yes,Good,2500,Dhaka,0
+Female,23,Middle class,In a Relationship,Unmarried,Family,5,3.9,No,Good,11000,Barisal,0
+Male,23,Middle class,Single,Unmarried,Bachelor,8,3.09,Yes,Normal,8000,Sylhet,0
+Female,25,Middle class,In a Relationship,Married,Family,5,3.09,Yes,Normal,1000,Dhaka,0
+Female,21,Middle class,In a Relationship,Unmarried,Bachelor,7,3.69,Yes,Normal,10638,Mymensingh,0
+Male,21,Lower Middle class,Single,Unmarried,Bachelor,2,3.65,Yes,Normal,5600,Dhaka,0
+Male,22,Lower Middle class,Single,Unmarried,Family,4,3.33,Yes,Normal,517,Dhaka,0
+Female,23,Lower Middle class,In a Relationship,Unmarried,Bachelor,4,3.44,No,Abnormal,9194,Barisal,0
+Female,23,Middle class,In a Relationship,Unmarried,Bachelor,1,3.45,Yes,Good,14287,Dhaka,0
+Female,20,Rich class,Single,Unmarried,Bachelor,2,2.3,Yes,Good,22597,Dhaka,0
+Female,23,Middle class,Single,Unmarried,Family,8,3.16,Yes,Normal,4200,Mymensingh,0
+Male,22,Lower Middle class,Single,Unmarried,Bachelor,6,2.45,Yes,Good,4800,Rangpur,0
+Male,21,Lower Middle class,Single,Unmarried,Bachelor,2,3.36,Yes,Good,8500,Dhaka,0
+Female,23,Lower Middle class,In a Relationship,Unmarried,Family,4,3.7,No,Critical,1356,Sylhet,1
+Female,23,Middle class,Single,Unmarried,Family,8,2.56,No,Normal,5400,Dhaka,1
+Male,25,Middle class,Single,Unmarried,Bachelor,3,2.54,No,Normal,8800,Barisal,0
+Female,24,Rich class,Complicated,Unmarried,Bachelor,5,3.8,Yes,Abnormal,26116,Barisal,0
+Male,22,Lower Middle class,Single,Unmarried,Bachelor,8,2.27,Yes,Good,9000,Rangpur,0
+Male,23,Middle class,Single,Unmarried,Bachelor,3,3.11,Yes,Normal,7500,Barisal,0
+Female,22,Rich class,In a Relationship,Unmarried,Family,6,2.89,Yes,Normal,5500,Khulna,0
+Female,23,Middle class,Single,Unmarried,Bachelor,7,3.48,No,Normal,19549,Rajshahi,1
+Male,26,Rich class,Single,Unmarried,Family,4,2.75,Yes,Good,8800,Rajshahi,0
+Female,21,Lower Middle class,Single,Unmarried,Bachelor,9,3.2,No,Critical,8580,Sylhet,1
+Female,20,Middle class,Single,Unmarried,Family,4,3.23,No,Abnormal,18135,Barisal,1
+Female,23,Rich class,In a Relationship,Unmarried,Bachelor,6,3.25,No,Abnormal,21428,Dhaka,0
+Female,23,Middle class,Single,Unmarried,Family,4,2.7,No,Good,9300,Rangpur,0
+Female,23,Middle class,In a Relationship,Unmarried,Bachelor,4,3.59,Yes,Abnormal,2450,Rangpur,0
+Male,22,Middle class,Single,Unmarried,Family,6,3.4,No,Good,18204,Dhaka,0
+Female,20,Middle class,Single,Unmarried,Bachelor,3,2.67,No,Critical,17362,Chittagong,1
+Male,23,Lower Middle class,Single,Unmarried,Bachelor,5,3.0,No,Normal,6505,Dhaka,1
+Female,24,Lower Middle class,Single,Unmarried,Family,2,3.48,No,Good,6800,Mymensingh,0
+Male,21,Middle class,In a Relationship,Unmarried,Bachelor,9,3.78,Yes,Normal,13921,Dhaka,0
+Male,26,Rich class,Single,Married,Bachelor,2,3.0,No,Critical,28707,Dhaka,1
+Female,23,Middle class,Single,Unmarried,Family,5,2.94,Yes,Good,6200,Dhaka,0
+Female,21,Middle class,Single,Married,Family,5,3.6,No,Normal,19036,Khulna,0
+Male,20,Lower Middle class,Single,Unmarried,Bachelor,2,3.21,Yes,Normal,4746,Rajshahi,0
+Female,26,Rich class,In a Relationship,Unmarried,Family,8,2.9,No,Critical,24084,Sylhet,1
+Male,22,Middle class,In a Relationship,Unmarried,Bachelor,4,3.24,Yes,Normal,15900,Barisal,0
+Female,23,Middle class,In a Relationship,Unmarried,Bachelor,7,3.45,No,Critical,10219,Rajshahi,1
+Female,20,Middle class,In a Relationship,Unmarried,Family,3,3.5,No,Abnormal,18295,Chittagong,0
+Female,24,Lower Middle class,Single,Unmarried,Bachelor,5,3.82,Yes,Good,8058,Rangpur,0
+Male,20,Lower Middle class,Single,Unmarried,Bachelor,2,3.6,Yes,Abnormal,9580,Rajshahi,1
+Male,23,Middle class,Single,Unmarried,Bachelor,3,3.21,Yes,Good,12400,Sylhet,0
+Female,28,Middle class,Single,Unmarried,Bachelor,3,3.19,No,Good,11946,Khulna,0
+Female,18,Lower Middle class,Single,Unmarried,Bachelor,4,3.98,Yes,Critical,5485,Rajshahi,1
+Male,20,Rich class,Single,Unmarried,Bachelor,2,2.36,Yes,Abnormal,27000,Dhaka,1
+Male,21,Lower Middle class,Single,Unmarried,Bachelor,4,3.68,Yes,Abnormal,3800,Dhaka,1
+Female,23,Middle class,Single,Unmarried,Family,3,3.49,No,Normal,4400,Dhaka,0
+Male,20,Middle class,Single,Unmarried,Bachelor,5,3.73,Yes,Normal,15969,Khulna,0
+Male,21,Middle class,Single,Unmarried,Bachelor,2,3.65,Yes,Good,6000,Rajshahi,0
+Male,23,Middle class,Single,Unmarried,Bachelor,8,3.73,Yes,Normal,8600,Sylhet,0
+Male,27,Middle class,Single,Married,Bachelor,2,3.0,Yes,Abnormal,15091,Khulna,0
+Female,27,Rich class,In a Relationship,Married,Family,4,3.47,Yes,Abnormal,25480,Mymensingh,0
+Male,23,Middle class,Single,Unmarried,Bachelor,7,3.47,Yes,Normal,7300,Sylhet,0
+Male,19,Middle class,Single,Unmarried,Bachelor,8,3.5,Yes,Normal,14412,Khulna,0
+Female,20,Middle class,Single,Unmarried,Bachelor,4,3.93,Yes,Normal,16311,Barisal,0
+Female,26,Rich class,In a Relationship,Married,Family,6,3.45,Yes,Abnormal,11624,Dhaka,0
+Male,20,Middle class,Single,Unmarried,Bachelor,2,3.44,Yes,Critical,10361,Khulna,1
+Female,23,Middle class,Single,Unmarried,Family,5,2.53,Yes,Good,9200,Mymensingh,0
+Male,20,Lower Middle class,Single,Unmarried,Bachelor,8,3.5,No,Normal,8500,Khulna,0
+Male,23,Middle class,Single,Unmarried,Family,3,2.4,No,Abnormal,19929,Khulna,1
+Male,26,Rich class,Single,Unmarried,Family,2,2.8,Yes,Abnormal,6500,Rajshahi,1
+Female,23,Middle class,Single,Unmarried,Family,3,3.55,Yes,Abnormal,6200,Dhaka,1
+Male,21,Lower Middle class,Single,Unmarried,Bachelor,4,3.45,Yes,Abnormal,9865,Mymensingh,1
+Male,22,Middle class,Single,Married,Bachelor,5,3.5,Yes,Abnormal,19656,Mymensingh,0
+Male,21,Middle class,Single,Unmarried,Bachelor,3,3.59,Yes,Critical,7600,Khulna,1
+Female,21,Rich class,Single,Unmarried,Family,8,3.58,Yes,Normal,11166,Rangpur,0
+Male,20,Lower Middle class,Single,Unmarried,Bachelor,9,3.4,Yes,Good,9865,Dhaka,0
+Female,25,Middle class,In a Relationship,Married,Family,2,3.76,Yes,Normal,8500,Dhaka,0
+Female,25,Middle class,In a Relationship,Married,Family,3,3.11,Yes,Normal,2000,Dhaka,0
+Male,22,Middle class,Single,Unmarried,Bachelor,4,3.0,Yes,Critical,15226,Dhaka,1
+Male,28,Lower Middle class,Single,Unmarried,Family,12,3.21,No,Normal,10000,Khulna,1
+Male,21,Middle class,Single,Unmarried,Bachelor,6,3.78,No,Abnormal,19868,Dhaka,1
+Female,22,Rich class,In a Relationship,Unmarried,Family,11,3.28,Yes,Normal,5500,Khulna,0
+Male,21,Lower Middle class,Single,Unmarried,Bachelor,7,3.89,Yes,Abnormal,7655,Dhaka,1
+Female,25,Middle class,In a Relationship,Married,Family,9,3.37,Yes,Normal,15000,Dhaka,0
+Female,23,Middle class,Single,Unmarried,Family,7,2.53,No,Normal,8900,Dhaka,1
+Female,23,Rich class,Single,Unmarried,Bachelor,6,3.45,Yes,Normal,23576,Chittagong,0
+Female,25,Middle class,In a Relationship,Married,Family,6,3.49,Yes,Normal,8700,Dhaka,0
+Male,23,Middle class,Complicated,Married,Bachelor,2,3.44,No,Normal,18027,Chittagong,0
+Female,24,Middle class,In a Relationship,Unmarried,Family,4,2.64,Yes,Abnormal,6500,Rajshahi,0
+Female,19,Middle class,Single,Unmarried,Family,1,2.78,Yes,Critical,16642,Barisal,1
+Male,20,Middle class,In a Relationship,Unmarried,Bachelor,5,3.2,No,Normal,5000,Sylhet,0
+Male,21,Middle class,Single,Unmarried,Bachelor,5,3.47,No,Abnormal,11229,Dhaka,1
+Male,22,Middle class,Single,Married,Family,6,3.77,No,Good,15627,Dhaka,0
+Male,20,Rich class,Single,Unmarried,Bachelor,8,3.46,No,Critical,25000,Dhaka,1
+Female,23,Middle class,In a Relationship,Unmarried,Bachelor,5,3.65,Yes,Good,18006,Rajshahi,0
+Male,22,Lower Middle class,Single,Unmarried,Bachelor,1,3.58,Yes,Normal,4500,Rangpur,0
+Female,23,Middle class,Single,Unmarried,Family,9,3.45,Yes,Critical,4200,Dhaka,1
+Female,27,Middle class,In a Relationship,Unmarried,Bachelor,6,3.56,Yes,Normal,15007,Dhaka,0
+Male,20,Middle class,Single,Unmarried,Bachelor,7,3.59,Yes,Good,3000,Barisal,0
+Female,25,Middle class,Complicated,Married,Family,3,2.93,No,Abnormal,16882,Rangpur,1
+Male,25,Middle class,Single,Unmarried,Bachelor,7,2.9,Yes,Abnormal,8800,Khulna,1
+Female,23,Lower Middle class,In a Relationship,Unmarried,Bachelor,9,3.44,No,Abnormal,8520,Dhaka,0
+Male,23,Middle class,Single,Unmarried,Bachelor,8,3.67,Yes,Good,8300,Sylhet,0
+Male,24,Middle class,Single,Unmarried,Family,6,3.36,Yes,Normal,12553,Dhaka,0
+Female,23,Rich class,Single,Unmarried,Family,8,2.63,Yes,Normal,5000,Rangpur,1
+Female,21,Middle class,In a Relationship,Unmarried,Family,4,3.9,Yes,Normal,14000,Rangpur,0
+Female,23,Middle class,Single,Unmarried,Bachelor,5,2.99,No,Good,6184,Chittagong,0
+Female,23,Middle class,Single,Unmarried,Family,3,3.19,Yes,Normal,4400,Dhaka,0
+Female,18,Middle class,Complicated,Unmarried,Family,8,2.95,No,Good,6100,Barisal,0
+Male,23,Rich class,Single,Unmarried,Family,8,3.46,Yes,Normal,20000,Mymensingh,0
+Male,26,Rich class,Single,Unmarried,Family,9,3.57,Yes,Critical,4500,Rangpur,1
+Female,23,Lower Middle class,Single,Unmarried,Bachelor,6,3.97,Yes,Good,7859,Dhaka,0
+Male,21,Lower Middle class,Single,Unmarried,Bachelor,8,3.19,Yes,Normal,8850,Dhaka,0
+Female,22,Rich class,In a Relationship,Unmarried,Family,11,2.6,Yes,Normal,7730,Sylhet,0
+Female,23,Middle class,Single,Unmarried,Family,2,3.53,No,Critical,6300,Dhaka,1
+Male,23,Middle class,Single,Unmarried,Bachelor,10,3.89,Yes,Good,17666,Rajshahi,0
+Female,25,Middle class,Single,Unmarried,Family,7,3.21,Yes,Critical,13389,Mymensingh,1
+Male,22,Middle class,In a Relationship,Unmarried,Bachelor,4,3.45,No,Normal,16169,Dhaka,0
+Female,23,Rich class,Single,Unmarried,Family,9,3.56,No,Good,29635,Rajshahi,0
+Female,25,Middle class,Single,Unmarried,Family,7,3.83,Yes,Good,7034,Dhaka,0
+Male,21,Lower Middle class,Single,Unmarried,Bachelor,2,2.7,Yes,Good,12400,Dhaka,0
+Female,23,Rich class,Single,Unmarried,Family,5,3.56,No,Good,30000,Mymensingh,0
+Female,25,Middle class,In a Relationship,Married,Family,5,3.49,Yes,Normal,8700,Dhaka,0
+Male,23,Lower Middle class,Single,Unmarried,Bachelor,6,3.97,Yes,Good,7859,Dhaka,0
+Female,25,Middle class,In a Relationship,Married,Family,6,3.4,Yes,Abnormal,3300,Dhaka,0
+Male,21,Lower Middle class,Single,Unmarried,Bachelor,3,3.46,Yes,Abnormal,7500,Dhaka,1
+Male,21,Lower Middle class,Single,Unmarried,Bachelor,6,3.37,Yes,Abnormal,6889,Sylhet,1
+Male,23,Lower Middle class,Single,Unmarried,Bachelor,7,3.46,Yes,Abnormal,9865,Dhaka,1
+Female,22,Rich class,In a Relationship,Unmarried,Family,8,3.15,Yes,Normal,6783,Sylhet,0
+Male,23,Lower Middle class,Complicated,Separated,Bachelor,1,3.46,No,Normal,1577,Chittagong,1
+Male,24,Lower Middle class,Single,Unmarried,Family,4,3.9,Yes,Abnormal,9000,Sylhet,1
+Male,24,Middle class,In a Relationship,Unmarried,Bachelor,9,3.31,Yes,Good,10180,Khulna,0
+Female,24,Middle class,In a Relationship,Married,Bachelor,3,3.0,Yes,Good,19591,Khulna,0
+Male,21,Middle class,Single,Unmarried,Bachelor,7,3.54,No,Good,6000,Chittagong,0
+Female,20,Middle class,In a Relationship,Unmarried,Bachelor,3,2.9,Yes,Abnormal,11307,Dhaka,0
+Male,24,Middle class,In a Relationship,Unmarried,Bachelor,7,3.67,Yes,Good,18496,Rajshahi,0
+Male,20,Middle class,Single,Unmarried,Bachelor,5,3.65,Yes,Normal,11188,Khulna,0
+Male,21,Middle class,Complicated,Unmarried,Family,4,3.5,Yes,Abnormal,13755,Khulna,0
+Female,25,Middle class,In a Relationship,Married,Family,11,3.86,Yes,Good,5400,Dhaka,0
+Female,22,Middle class,In a Relationship,Separated,Bachelor,3,4.0,Yes,Normal,6100,Barisal,0
+Male,19,Middle class,Single,Unmarried,Bachelor,3,2.98,Yes,Normal,12078,Rajshahi,0
+Female,23,Middle class,Single,Unmarried,Family,8,3.72,Yes,Normal,6000,Dhaka,0
+Female,22,Middle class,Single,Married,Bachelor,4,3.65,Yes,Normal,15805,Khulna,0
+Female,23,Middle class,Single,Unmarried,Family,7,3.85,Yes,Normal,7800,Dhaka,0
+Male,23,Middle class,Single,Unmarried,Bachelor,4,3.39,Yes,Normal,6900,Sylhet,0
+Female,22,Rich class,In a Relationship,Unmarried,Family,2,3.4,Yes,Normal,6750,Khulna,0
+Male,23,Lower Middle class,Single,Unmarried,Bachelor,7,3.98,Yes,Abnormal,8182,Rajshahi,1
+Female,21,Middle class,In a Relationship,Unmarried,Family,4,3.34,Yes,Normal,16324,Khulna,0
+Male,21,Lower Middle class,Single,Unmarried,Bachelor,8,3.36,Yes,Normal,2200,Dhaka,0
+Female,22,Middle class,In a Relationship,Unmarried,Family,5,3.4,No,Good,17552,Khulna,0
+Female,23,Middle class,Single,Unmarried,Family,3,3.6,Yes,Good,6400,Dhaka,0
+Male,25,Middle class,Single,Married,Bachelor,5,3.78,No,Good,17769,Rajshahi,0
+Female,24,Rich class,In a Relationship,Unmarried,Family,8,3.2,Yes,Normal,6000,Chittagong,0
+Female,25,Middle class,Single,Unmarried,Family,5,3.78,Yes,Good,5600,Dhaka,0
+Male,22,Lower Middle class,Single,Unmarried,Bachelor,2,3.15,No,Good,622,Rajshahi,0
+Male,26,Middle class,In a Relationship,Unmarried,Bachelor,3,3.0,No,Good,16980,Khulna,0
+Female,22,Rich class,Single,Unmarried,Family,9,2.65,No,Abnormal,28585,Sylhet,1
+Male,21,Lower Middle class,Single,Unmarried,Bachelor,3,3.21,Yes,Normal,5200,Dhaka,0
+Female,21,Middle class,In a Relationship,Unmarried,Family,5,4.0,Yes,Critical,13000,Barisal,1
+Female,21,Middle class,Single,Unmarried,Bachelor,5,3.68,Yes,Normal,12666,Dhaka,0
+Male,23,Middle class,Single,Unmarried,Bachelor,5,3.09,Yes,Normal,6700,Barisal,0
+Female,23,Middle class,Single,Unmarried,Bachelor,3,3.89,Yes,Normal,10494,Mymensingh,0
+Female,22,Rich class,In a Relationship,Unmarried,Family,10,3.81,Yes,Normal,5500,Khulna,0
+Male,28,Lower Middle class,In a Relationship,Unmarried,Bachelor,10,3.97,Yes,Good,11000,Barisal,0
+Female,21,Middle class,Single,Unmarried,Family,6,3.65,Yes,Normal,10000,Khulna,0
+Male,22,Lower Middle class,Complicated,Unmarried,Family,2,3.65,Yes,Good,641,Rangpur,0
+Male,20,Middle class,In a Relationship,Unmarried,Bachelor,3,3.21,Yes,Abnormal,11490,Rajshahi,0
+Female,22,Lower Middle class,Single,Unmarried,Bachelor,9,3.25,No,Normal,5600,Dhaka,1
+Female,24,Rich class,In a Relationship,Married,Bachelor,6,3.0,No,Good,22000,Rajshahi,0
+Male,21,Lower Middle class,Single,Unmarried,Bachelor,4,3.57,Yes,Normal,3250,Dhaka,0
+Female,22,Rich class,In a Relationship,Unmarried,Family,6,2.69,Yes,Normal,7840,Sylhet,0
+Female,23,Middle class,In a Relationship,Unmarried,Bachelor,4,4.0,Yes,Good,10000,Chittagong,0
+Female,21,Middle class,Single,Unmarried,Bachelor,5,3.65,Yes,Normal,10247,Chittagong,0
+Male,21,Middle class,Single,Married,Bachelor,8,3.0,Yes,Abnormal,13389,Rangpur,0
+Male,21,Middle class,Single,Unmarried,Bachelor,4,2.8,No,Abnormal,15007,Khulna,1
+Male,21,Lower Middle class,Single,Unmarried,Bachelor,3,3.52,Yes,Good,3000,Dhaka,0
+Female,23,Middle class,Single,Unmarried,Family,8,3.58,Yes,Normal,9300,Dhaka,0
+Female,23,Middle class,Single,Unmarried,Family,5,2.62,No,Normal,8600,Barisal,0
+Female,23,Middle class,Single,Unmarried,Family,6,2.84,Yes,Normal,8300,Dhaka,0
+Female,23,Middle class,In a Relationship,Married,Bachelor,8,2.89,Yes,Good,13050,Sylhet,0
+Male,22,Middle class,Single,Married,Family,3,3.66,Yes,Normal,9000,Sylhet,0
+Male,23,Middle class,Single,Unmarried,Bachelor,4,2.93,Yes,Good,7100,Sylhet,0
+Female,24,Middle class,In a Relationship,Unmarried,Bachelor,6,3.67,No,Critical,11813,Chittagong,1
+Male,26,Middle class,In a Relationship,Unmarried,Bachelor,6,3.71,Yes,Good,18803,Dhaka,0
+Female,21,Middle class,In a Relationship,Separated,Family,7,3.0,No,Normal,9000,Mymensingh,0
+Female,25,Middle class,Single,Unmarried,Family,4,3.8,Yes,Good,7649,Dhaka,0
+Female,25,Middle class,In a Relationship,Married,Family,9,3.08,Yes,Good,500,Dhaka,0
+Male,28,Middle class,In a Relationship,Married,Bachelor,5,3.0,Yes,Normal,15794,Chittagong,0
+Female,19,Lower Middle class,Single,Unmarried,Bachelor,8,2.9,Yes,Critical,6318,Khulna,1
+Male,22,Lower Middle class,Single,Unmarried,Bachelor,6,2.49,Yes,Critical,7800,Rangpur,1
+Male,28,Middle class,Single,Married,Bachelor,8,3.0,Yes,Good,16053,Chittagong,0
+Female,25,Middle class,Single,Unmarried,Family,6,3.22,Yes,Critical,4700,Dhaka,1
+Male,25,Middle class,Single,Unmarried,Bachelor,8,3.37,Yes,Good,7300,Barisal,0
+Male,21,Lower Middle class,Single,Unmarried,Bachelor,3,3.11,Yes,Good,11000,Dhaka,0
+Female,22,Middle class,In a Relationship,Unmarried,Bachelor,6,3.65,Yes,Normal,17208,Barisal,0
+Female,23,Middle class,Single,Unmarried,Family,6,2.64,Yes,Normal,4800,Dhaka,0
+Male,21,Rich class,Single,Unmarried,Bachelor,2,3.47,Yes,Abnormal,26841,Dhaka,0
+Female,22,Middle class,Single,Married,Bachelor,4,3.44,Yes,Normal,10916,Chittagong,0
+Male,25,Rich class,In a Relationship,Separated,Family,7,3.48,Yes,Abnormal,26116,Dhaka,0
+Female,23,Rich class,In a Relationship,Unmarried,Family,4,3.76,Yes,Abnormal,26134,Dhaka,0
+Female,22,Middle class,In a Relationship,Unmarried,Family,3,3.2,Yes,Abnormal,19681,Chittagong,0
+Male,27,Middle class,Single,Married,Bachelor,2,3.0,No,Abnormal,12668,Khulna,0
+Female,23,Middle class,In a Relationship,Unmarried,Bachelor,6,3.2,No,Normal,15213,Barisal,0
+Male,21,Lower Middle class,Single,Unmarried,Bachelor,5,3.25,Yes,Critical,9600,Dhaka,1
+Male,22,Lower Middle class,Single,Unmarried,Bachelor,3,2.69,Yes,Abnormal,6439,Rajshahi,1
+Female,22,Middle class,In a Relationship,Separated,Family,7,3.85,No,Good,18844,Chittagong,0
+Male,23,Middle class,Single,Unmarried,Bachelor,5,3.65,Yes,Normal,8200,Sylhet,0
+Female,24,Rich class,Single,Married,Bachelor,9,3.47,No,Normal,25896,Chittagong,0
+Male,21,Middle class,Single,Unmarried,Family,3,3.3,No,Normal,5000,Dhaka,0
+Female,28,Middle class,In a Relationship,Married,Family,6,3.5,Yes,Abnormal,16705,Barisal,0
+Female,25,Middle class,In a Relationship,Married,Family,6,2.9,Yes,Normal,12342,Dhaka,0
+Female,23,Lower Middle class,Single,Unmarried,Bachelor,7,3.89,No,Good,8000,Rangpur,0
+Female,22,Rich class,In a Relationship,Unmarried,Family,5,2.84,Yes,Normal,6173,Sylhet,0
+Female,22,Rich class,In a Relationship,Unmarried,Family,6,3.83,Yes,Good,5500,Khulna,0
+Male,23,Middle class,Single,Unmarried,Bachelor,7,3.0,No,Abnormal,15862,Chittagong,1
+Male,23,Middle class,Single,Unmarried,Bachelor,9,3.84,Yes,Critical,15047,Khulna,1
+Female,25,Middle class,Single,Unmarried,Family,7,3.0,Yes,Critical,15000,Sylhet,1
+Female,25,Middle class,In a Relationship,Married,Family,2,3.35,Yes,Normal,6900,Dhaka,0
+Male,27,Lower Middle class,Single,Married,Family,4,3.84,Yes,Critical,3982,Sylhet,1
+Female,23,Middle class,In a Relationship,Married,Family,5,3.26,Yes,Critical,16116,Barisal,1
+Female,24,Rich class,Single,Unmarried,Bachelor,5,3.89,Yes,Normal,25896,Mymensingh,0
+Female,23,Lower Middle class,In a Relationship,Married,Bachelor,8,2.5,No,Good,5800,Chittagong,0
+Male,21,Lower Middle class,Complicated,Unmarried,Family,4,3.4,No,Normal,9899,Dhaka,0
+Female,23,Middle class,Single,Unmarried,Family,4,2.7,Yes,Normal,8300,Dhaka,0
+Male,24,Lower Middle class,Single,Unmarried,Family,3,3.5,Yes,Normal,2000,Mymensingh,0
+Female,20,Rich class,In a Relationship,Unmarried,Bachelor,2,3.2,Yes,Critical,24709,Rajshahi,1
+Male,21,Middle class,Single,Unmarried,Family,4,3.5,No,Critical,18000,Dhaka,1
+Female,23,Middle class,Single,Unmarried,Family,9,2.8,No,Critical,7000,Dhaka,1
+Female,25,Middle class,In a Relationship,Married,Family,2,3.91,Yes,Normal,9100,Dhaka,0
+Male,25,Middle class,In a Relationship,Married,Family,9,3.57,Yes,Good,18000,Barisal,0
+Female,25,Middle class,In a Relationship,Married,Family,11,3.89,Yes,Normal,4000,Dhaka,0
+Male,26,Middle class,Single,Married,Family,10,3.79,Yes,Normal,12479,Chittagong,0
+Female,20,Middle class,In a Relationship,Married,Bachelor,6,3.46,No,Good,11269,Rajshahi,0
+Male,18,Rich class,Single,Married,Bachelor,4,3.67,No,Good,21773,Khulna,0
+Female,18,Lower Middle class,Single,Unmarried,Bachelor,3,3.46,Yes,Normal,3860,Barisal,0
+Male,22,Lower Middle class,Complicated,Unmarried,Bachelor,2,3.0,No,Normal,12000,Dhaka,0
+Female,23,Rich class,In a Relationship,Unmarried,Family,9,3.16,Yes,Abnormal,7872,Rangpur,0
+Male,21,Lower Middle class,Single,Unmarried,Bachelor,5,3.45,Yes,Abnormal,7600,Dhaka,1
+Male,20,Middle class,Single,Unmarried,Bachelor,5,4.0,Yes,Abnormal,10064,Khulna,1
+Male,22,Lower Middle class,Single,Unmarried,Bachelor,9,2.63,Yes,Abnormal,6700,Rangpur,1
+Female,23,Middle class,Single,Unmarried,Family,5,3.42,No,Critical,15471,Mymensingh,1
+Female,24,Rich class,Single,Unmarried,Bachelor,7,2.9,Yes,Good,6700,Barisal,0
+Female,23,Rich class,In a Relationship,Unmarried,Family,6,3.58,Yes,Abnormal,6300,Rangpur,0
+Male,26,Rich class,Single,Married,Bachelor,6,3.47,No,Normal,26797,Rangpur,0
+Male,23,Lower Middle class,Complicated,Unmarried,Bachelor,5,3.65,No,Abnormal,5000,Dhaka,0
+Male,21,Lower Middle class,Single,Unmarried,Bachelor,5,3.32,Yes,Abnormal,8900,Dhaka,1
+Female,22,Rich class,In a Relationship,Unmarried,Family,3,3.6,Yes,Abnormal,8000,Khulna,0
+Female,28,Lower Middle class,In a Relationship,Unmarried,Bachelor,7,3.6,No,Critical,9531,Dhaka,1
+Female,21,Middle class,Single,Unmarried,Bachelor,2,3.89,No,Abnormal,13677,Rajshahi,1
+Female,28,Middle class,In a Relationship,Separated,Family,9,3.7,No,Good,19476,Dhaka,0
+Female,22,Rich class,Single,Unmarried,Bachelor,4,3.65,Yes,Normal,10000,Barisal,0
+Female,24,Middle class,Single,Unmarried,Family,5,3.47,Yes,Normal,12000,Khulna,0
+Male,22,Middle class,Single,Unmarried,Bachelor,7,3.48,Yes,Normal,12000,Dhaka,0
+Female,21,Rich class,Single,Unmarried,Bachelor,4,3.55,No,Normal,20477,Dhaka,0
+Female,24,Rich class,Single,Unmarried,Bachelor,8,3.26,Yes,Normal,28623,Dhaka,0
+Male,21,Middle class,Single,Unmarried,Bachelor,8,3.0,Yes,Normal,12641,Rajshahi,0
+Male,23,Middle class,Single,Unmarried,Family,10,3.47,Yes,Good,12641,Chittagong,0
+Male,21,Lower Middle class,Single,Unmarried,Bachelor,4,3.29,Yes,Good,9200,Dhaka,0
+Female,24,Middle class,Single,Unmarried,Family,6,3.44,Yes,Abnormal,6700,Dhaka,1
+Female,22,Middle class,Single,Unmarried,Family,8,3.43,Yes,Critical,11500,Chittagong,1
+Female,22,Middle class,Single,Separated,Bachelor,5,3.4,No,Normal,19511,Khulna,0
+Female,25,Middle class,In a Relationship,Married,Family,2,3.13,Yes,Normal,3000,Dhaka,0
+Male,21,Middle class,In a Relationship,Unmarried,Bachelor,8,3.56,Yes,Normal,12006,Dhaka,0
+Female,23,Lower Middle class,In a Relationship,Unmarried,Bachelor,7,3.39,No,Abnormal,8600,Chittagong,0
+Male,24,Middle class,Single,Unmarried,Bachelor,9,3.2,No,Normal,12528,Dhaka,1
+Male,21,Lower Middle class,Single,Unmarried,Bachelor,5,3.61,Yes,Normal,3450,Dhaka,0
+Female,22,Lower Middle class,In a Relationship,Unmarried,Bachelor,5,3.76,No,Normal,10000,Rangpur,0
+Male,28,Middle class,Single,Unmarried,Family,7,2.87,Yes,Abnormal,14540,Sylhet,1
+Female,18,Middle class,Single,Unmarried,Family,4,3.88,Yes,Normal,12469,Sylhet,0
+Female,23,Lower Middle class,Single,Unmarried,Bachelor,5,3.75,No,Good,5000,Chittagong,0
+Male,20,Lower Middle class,Single,Unmarried,Family,5,3.28,No,Critical,6000,Chittagong,1
+Male,24,Rich class,Single,Unmarried,Family,10,3.0,Yes,Normal,27818,Dhaka,0
+Male,22,Lower Middle class,Single,Unmarried,Bachelor,5,3.37,Yes,Good,7500,Rangpur,0
+Male,25,Lower Middle class,In a Relationship,Unmarried,Bachelor,2,2.98,Yes,Normal,7600,Sylhet,0
+Female,23,Middle class,Single,Unmarried,Family,3,3.11,Yes,Critical,3400,Dhaka,1
+Female,26,Rich class,In a Relationship,Married,Family,6,3.12,Yes,Normal,12748,Barisal,0
+Male,18,Middle class,Single,Unmarried,Family,2,3.25,Yes,Abnormal,13222,Sylhet,1
+Male,20,Lower Middle class,Single,Married,Bachelor,6,3.0,No,Good,9600,Dhaka,0
+Female,23,Middle class,Single,Unmarried,Family,6,2.85,Yes,Abnormal,8600,Dhaka,1
+Male,20,Middle class,Single,Married,Bachelor,1,3.0,Yes,Good,16053,Khulna,0
+Female,27,Middle class,In a Relationship,Married,Bachelor,2,3.0,No,Abnormal,12699,Mymensingh,0
+Male,23,Middle class,Single,Unmarried,Bachelor,8,3.37,Yes,Good,12000,Sylhet,0
+Male,24,Middle class,Single,Unmarried,Bachelor,4,3.0,Yes,Normal,14466,Sylhet,0
+Female,23,Middle class,Single,Unmarried,Family,6,2.96,No,Normal,9100,Dhaka,1
+Female,27,Rich class,Single,Unmarried,Bachelor,8,3.56,Yes,Good,22250,Mymensingh,0
+Male,18,Rich class,Single,Unmarried,Family,1,3.77,No,Normal,30000,Barisal,0
+Female,23,Middle class,Single,Unmarried,Bachelor,7,2.89,No,Normal,16211,Barisal,1
+Female,21,Rich class,In a Relationship,Unmarried,Bachelor,5,3.2,Yes,Abnormal,20000,Chittagong,0
+Male,22,Lower Middle class,Single,Unmarried,Bachelor,5,2.25,Yes,Abnormal,8600,Rangpur,1
+Male,24,Lower Middle class,Single,Unmarried,Bachelor,4,3.55,Yes,Normal,4950,Mymensingh,0
+Male,21,Lower Middle class,Single,Unmarried,Bachelor,2,3.42,Yes,Normal,2500,Dhaka,0
+Female,22,Rich class,In a Relationship,Unmarried,Family,8,3.78,Yes,Good,7405,Sylhet,0
+Male,26,Middle class,Single,Married,Bachelor,11,2.68,No,Normal,12043,Khulna,0
+Male,23,Middle class,Single,Unmarried,Bachelor,8,3.21,Yes,Normal,8000,Barisal,0
+Female,23,Middle class,In a Relationship,Unmarried,Bachelor,5,3.65,Yes,Abnormal,14958,Sylhet,0
+Male,18,Rich class,Single,Unmarried,Family,2,3.33,No,Normal,25000,Mymensingh,0
+Female,23,Rich class,In a Relationship,Unmarried,Family,3,3.81,Yes,Good,6190,Rangpur,0
+Male,25,Middle class,Complicated,Unmarried,Family,8,3.11,Yes,Good,7800,Dhaka,0
+Female,24,Rich class,Single,Unmarried,Bachelor,5,3.45,Yes,Abnormal,23609,Dhaka,0
+Female,23,Middle class,Single,Unmarried,Family,7,2.63,Yes,Good,4600,Dhaka,0
+Male,24,Middle class,Single,Unmarried,Family,5,3.6,Yes,Abnormal,15007,Chittagong,1
+Female,23,Middle class,Single,Unmarried,Family,9,2.71,Yes,Abnormal,4000,Dhaka,1
+Male,21,Rich class,Single,Unmarried,Bachelor,6,3.77,Yes,Critical,20911,Dhaka,1
+Female,24,Lower Middle class,In a Relationship,Unmarried,Bachelor,2,3.0,No,Critical,7833,Khulna,1
+Male,20,Rich class,Single,Unmarried,Bachelor,4,3.0,Yes,Good,10000,Dhaka,0
+Female,21,Lower Middle class,Single,Unmarried,Bachelor,5,3.2,No,Normal,6000,Dhaka,0
+Female,23,Middle class,Single,Unmarried,Family,6,2.77,No,Normal,6800,Dhaka,1
+Female,23,Middle class,In a Relationship,Unmarried,Bachelor,2,2.67,Yes,Normal,12022,Dhaka,0
+Female,17,Lower Middle class,Complicated,Unmarried,Bachelor,1,3.33,Yes,Good,9621,Rangpur,0
+Female,24,Lower Middle class,Single,Unmarried,Family,6,3.13,No,Normal,7400,Chittagong,1
+Male,23,Middle class,Single,Unmarried,Family,3,2.6,No,Abnormal,10308,Khulna,1
+Male,23,Middle class,Single,Unmarried,Bachelor,8,3.53,Yes,Good,7600,Sylhet,0
+Male,21,Lower Middle class,Single,Unmarried,Bachelor,4,3.5,Yes,Critical,5387,Sylhet,1
+Male,21,Lower Middle class,Single,Unmarried,Bachelor,6,3.28,Yes,Good,9300,Dhaka,0
+Female,25,Middle class,In a Relationship,Married,Family,9,3.36,Yes,Normal,3460,Dhaka,0
+Female,24,Lower Middle class,Single,Unmarried,Family,3,3.84,Yes,Good,9000,Mymensingh,0
+Female,19,Middle class,Complicated,Unmarried,Bachelor,2,3.56,No,Normal,21000,Mymensingh,0
+Female,22,Middle class,In a Relationship,Unmarried,Bachelor,5,3.09,Yes,Normal,16000,Rajshahi,0
+Female,23,Middle class,Single,Unmarried,Family,4,3.41,Yes,Critical,5400,Dhaka,1
+Female,22,Middle class,Single,Unmarried,Bachelor,7,3.0,Yes,Critical,19144,Khulna,1
+Male,23,Middle class,In a Relationship,Unmarried,Family,5,3.2,Yes,Good,20000,Sylhet,0
+Female,23,Middle class,Single,Unmarried,Family,5,2.54,Yes,Abnormal,6200,Sylhet,1
+Female,24,Lower Middle class,Single,Unmarried,Family,8,3.65,Yes,Abnormal,7700,Khulna,1
+Male,23,Middle class,Single,Unmarried,Bachelor,11,3.05,Yes,Normal,7200,Sylhet,0
+Male,24,Lower Middle class,Single,Unmarried,Bachelor,2,3.59,Yes,Good,5150,Mymensingh,0
+Male,23,Middle class,Single,Unmarried,Bachelor,8,3.07,Yes,Good,9500,Sylhet,0
+Female,21,Middle class,Single,Married,Family,10,3.35,No,Normal,15967,Mymensingh,0
+Female,23,Middle class,Single,Unmarried,Family,9,2.79,No,Good,4900,Barisal,0
+Female,23,Middle class,Single,Unmarried,Family,9,3.68,Yes,Normal,6600,Dhaka,0
+Female,28,Middle class,Single,Married,Family,12,3.67,Yes,Critical,19000,Mymensingh,1
+Male,21,Middle class,Single,Unmarried,Family,4,3.3,Yes,Good,6000,Rajshahi,0
+Female,23,Middle class,Single,Unmarried,Family,8,2.54,No,Normal,7300,Dhaka,1
+Male,23,Middle class,Single,Unmarried,Bachelor,6,3.15,Yes,Good,5400,Sylhet,0
+Female,23,Lower Middle class,Single,Unmarried,Family,3,2.8,Yes,Normal,9003,Dhaka,0
+Male,20,Lower Middle class,Single,Unmarried,Family,3,3.56,Yes,Abnormal,8271,Dhaka,1
+Female,24,Lower Middle class,Single,Unmarried,Bachelor,8,3.89,No,Good,103,Khulna,0
+Female,25,Middle class,In a Relationship,Married,Family,8,3.92,Yes,Good,7000,Dhaka,0
+Female,23,Middle class,Single,Unmarried,Family,5,3.11,Yes,Normal,6100,Dhaka,0
+Female,20,Middle class,In a Relationship,Unmarried,Bachelor,5,3.98,Yes,Abnormal,18126,Sylhet,0
+Female,23,Middle class,Single,Unmarried,Family,6,3.61,No,Critical,7200,Dhaka,1
+Female,21,Middle class,Single,Unmarried,Family,5,3.5,No,Good,18000,Khulna,0
+Female,23,Middle class,Single,Unmarried,Family,8,3.7,No,Normal,4900,Dhaka,0
+Male,20,Middle class,Single,Unmarried,Family,4,3.42,Yes,Abnormal,14974,Barisal,1
+Male,20,Middle class,Single,Unmarried,Bachelor,9,3.92,Yes,Abnormal,12000,Rangpur,1
+Male,20,Middle class,Single,Unmarried,Bachelor,5,3.14,Yes,Normal,10383,Khulna,0
+Male,20,Middle class,Single,Unmarried,Family,2,3.94,Yes,Abnormal,16484,Rajshahi,1
+Female,20,Rich class,Complicated,Unmarried,Bachelor,4,3.6,Yes,Abnormal,22367,Rajshahi,0
+Female,20,Rich class,In a Relationship,Married,Family,3,3.58,Yes,Abnormal,29260,Dhaka,0
+Male,23,Middle class,Single,Separated,Bachelor,4,3.3,No,Normal,19698,Dhaka,0
+Female,26,Rich class,In a Relationship,Married,Family,8,3.3,Yes,Critical,11320,Dhaka,1
+Male,22,Lower Middle class,Single,Unmarried,Family,8,3.0,Yes,Good,8000,Barisal,0
+Male,26,Middle class,In a Relationship,Unmarried,Bachelor,8,3.78,Yes,Good,14159,Chittagong,0
+Male,23,Middle class,Single,Unmarried,Bachelor,3,3.49,Yes,Normal,7400,Sylhet,0
+Male,25,Middle class,Single,Unmarried,Bachelor,5,2.65,No,Good,7500,Barisal,0
+Female,21,Middle class,Single,Unmarried,Bachelor,4,3.2,Yes,Normal,6000,Dhaka,0
+Male,23,Middle class,Single,Unmarried,Bachelor,11,3.23,Yes,Abnormal,8300,Sylhet,1
+Male,26,Rich class,Single,Married,Bachelor,4,3.0,Yes,Normal,27081,Khulna,0
+Male,22,Lower Middle class,Single,Unmarried,Bachelor,6,2.29,Yes,Abnormal,5600,Rangpur,1
+Female,27,Middle class,Single,Unmarried,Bachelor,4,3.75,Yes,Normal,19787,Rajshahi,0
+Male,21,Lower Middle class,Single,Unmarried,Bachelor,3,3.32,Yes,Good,4700,Dhaka,0
+Female,21,Middle class,Single,Married,Bachelor,6,3.2,Yes,Abnormal,4000,Rajshahi,0
+Male,21,Lower Middle class,Single,Unmarried,Bachelor,4,3.58,Yes,Good,6300,Dhaka,0
+Male,24,Middle class,Single,Unmarried,Family,7,3.38,Yes,Normal,16000,Sylhet,0
+Male,21,Lower Middle class,Single,Unmarried,Bachelor,6,3.5,Yes,Normal,11600,Dhaka,0
+Male,23,Middle class,Single,Separated,Bachelor,3,3.2,Yes,Normal,10850,Khulna,0
+Female,23,Middle class,In a Relationship,Unmarried,Bachelor,4,3.89,Yes,Good,13457,Dhaka,0
+Female,22,Rich class,In a Relationship,Unmarried,Family,7,3.72,Yes,Normal,5500,Khulna,0
+Female,21,Middle class,In a Relationship,Unmarried,Family,3,2.69,Yes,Good,11005,Dhaka,0
+Male,25,Middle class,Complicated,Unmarried,Family,7,3.29,No,Abnormal,8000,Sylhet,1
+Female,20,Middle class,Single,Unmarried,Family,3,3.8,Yes,Normal,8700,Dhaka,0
+Male,21,Lower Middle class,Single,Unmarried,Bachelor,7,3.14,Yes,Good,1100,Dhaka,0
+Male,25,Middle class,Single,Unmarried,Family,5,3.0,Yes,Good,16094,Rajshahi,0
+Female,24,Middle class,In a Relationship,Unmarried,Family,8,2.87,Yes,Abnormal,4200,Khulna,0
+Male,21,Middle class,Single,Married,Family,6,3.72,Yes,Normal,15439,Dhaka,0
+Female,20,Rich class,Single,Unmarried,Bachelor,3,2.3,Yes,Normal,26000,Mymensingh,1
+Male,22,Middle class,Complicated,Unmarried,Family,2,3.55,Yes,Good,12199,Khulna,0
+Male,21,Rich class,In a Relationship,Separated,Bachelor,2,3.0,Yes,Good,11000,Dhaka,0
+Female,25,Lower Middle class,Single,Married,Family,7,3.29,Yes,Good,5900,Dhaka,0
+Female,23,Middle class,Single,Unmarried,Family,3,3.48,No,Abnormal,6800,Rajshahi,1
+Female,23,Middle class,Single,Unmarried,Family,5,3.87,Yes,Critical,6100,Dhaka,1
+Female,22,Rich class,In a Relationship,Unmarried,Family,9,3.79,Yes,Normal,5500,Khulna,0
+Female,27,Middle class,Single,Married,Bachelor,11,3.32,Yes,Critical,13212,Rangpur,1
+Female,21,Middle class,In a Relationship,Unmarried,Bachelor,5,3.35,Yes,Critical,18911,Barisal,1
+Female,25,Rich class,Complicated,Unmarried,Bachelor,10,2.98,Yes,Normal,4900,Rangpur,0
+Female,23,Rich class,In a Relationship,Married,Family,8,3.56,Yes,Normal,27134,Dhaka,0
+Female,20,Lower Middle class,Complicated,Married,Bachelor,3,3.7,No,Abnormal,8898,Mymensingh,0
+Male,21,Lower Middle class,Single,Unmarried,Bachelor,6,3.58,Yes,Good,3300,Dhaka,0
+Female,22,Rich class,In a Relationship,Unmarried,Family,6,2.68,Yes,Normal,6082,Sylhet,0
+Female,23,Lower Middle class,In a Relationship,Married,Family,8,3.89,No,Abnormal,6500,Barisal,0
+Male,20,Lower Middle class,Single,Unmarried,Family,4,3.0,Yes,Good,8479,Dhaka,0
+Male,26,Middle class,Single,Unmarried,Bachelor,5,3.59,Yes,Abnormal,17000,Rangpur,1
+Male,23,Middle class,Single,Unmarried,Bachelor,4,2.95,Yes,Good,5500,Sylhet,0
+Female,24,Middle class,In a Relationship,Unmarried,Family,4,3.35,No,Abnormal,10367,Khulna,0
+Male,27,Rich class,Single,Unmarried,Bachelor,6,3.75,Yes,Critical,28613,Dhaka,1
+Male,20,Lower Middle class,Single,Unmarried,Bachelor,2,2.75,Yes,Good,6803,Rajshahi,0
+Male,23,Middle class,Single,Unmarried,Family,3,4.0,No,Normal,17075,Chittagong,0
+Male,21,Lower Middle class,Single,Unmarried,Bachelor,8,3.9,Yes,Good,13000,Dhaka,0
+Male,18,Rich class,In a Relationship,Unmarried,Bachelor,5,3.5,No,Normal,26589,Sylhet,0
+Male,24,Middle class,Single,Unmarried,Bachelor,5,3.56,No,Normal,10301,Khulna,0
+Male,22,Middle class,Single,Unmarried,Bachelor,6,3.65,Yes,Normal,18187,Dhaka,0
+Female,21,Rich class,In a Relationship,Unmarried,Family,4,3.15,No,Normal,23292,Chittagong,0
+Male,24,Lower Middle class,Single,Unmarried,Bachelor,4,3.74,Yes,Abnormal,5505,Mymensingh,1
+Male,24,Lower Middle class,Single,Unmarried,Bachelor,7,3.56,Yes,Normal,5000,Mymensingh,0
+Male,21,Lower Middle class,Single,Unmarried,Bachelor,4,3.5,Yes,Normal,12600,Dhaka,0
+Male,21,Lower Middle class,Single,Unmarried,Bachelor,3,3.83,No,Abnormal,5408,Chittagong,1
+Female,22,Middle class,In a Relationship,Unmarried,Bachelor,5,3.55,No,Normal,11895,Mymensingh,0
+Male,18,Rich class,Single,Unmarried,Family,2,3.33,Yes,Normal,25000,Chittagong,0
+Male,21,Middle class,Single,Unmarried,Bachelor,5,3.89,Yes,Critical,12114,Dhaka,1
+Female,28,Middle class,In a Relationship,Unmarried,Bachelor,12,3.7,Yes,Normal,17000,Mymensingh,0
+Female,23,Middle class,Single,Unmarried,Family,8,3.6,Yes,Good,7900,Dhaka,0
+Female,21,Middle class,Single,Unmarried,Family,5,3.5,Yes,Good,18000,Khulna,0
+Male,20,Lower Middle class,Single,Unmarried,Bachelor,5,3.1,Yes,Normal,5896,Khulna,0
+Male,21,Middle class,Single,Separated,Family,8,3.35,No,Good,14339,Barisal,0
+Female,23,Lower Middle class,Single,Unmarried,Bachelor,6,3.09,No,Good,4900,Sylhet,0
+Male,22,Lower Middle class,Single,Unmarried,Bachelor,11,2.69,Yes,Abnormal,4500,Rangpur,1
+Male,21,Lower Middle class,Single,Unmarried,Bachelor,3,3.98,Yes,Normal,5896,Dhaka,0
+Male,23,Middle class,Single,Unmarried,Bachelor,6,3.45,Yes,Normal,11800,Sylhet,0
+Female,21,Middle class,Single,Unmarried,Bachelor,9,3.67,Yes,Normal,11232,Chittagong,0
+Male,20,Middle class,In a Relationship,Unmarried,Bachelor,3,3.57,No,Abnormal,11918,Sylhet,0
+Female,20,Middle class,Single,Unmarried,Family,1,3.38,Yes,Critical,11143,Dhaka,1
+Male,22,Rich class,Single,Unmarried,Bachelor,9,3.42,Yes,Critical,26600,Rajshahi,1
+Female,25,Rich class,In a Relationship,Married,Family,6,2.9,Yes,Critical,21378,Dhaka,1
+Male,20,Middle class,Single,Unmarried,Bachelor,5,3.17,Yes,Abnormal,16030,Dhaka,1
+Male,19,Middle class,Complicated,Unmarried,Family,2,3.5,Yes,Normal,11720,Chittagong,0
+Male,23,Lower Middle class,Single,Unmarried,Bachelor,6,3.5,Yes,Normal,7100,Mymensingh,0
+Male,21,Lower Middle class,Single,Unmarried,Bachelor,6,3.19,Yes,Normal,6400,Dhaka,0
+Male,24,Middle class,Single,Unmarried,Family,8,3.45,No,Good,14867,Barisal,0
+Female,21,Middle class,In a Relationship,Unmarried,Family,3,3.89,No,Good,18488,Dhaka,0
+Male,20,Lower Middle class,Single,Unmarried,Family,3,3.3,Yes,Abnormal,1364,Mymensingh,1
+Female,25,Middle class,Single,Unmarried,Bachelor,7,3.75,Yes,Good,15746,Sylhet,0
+Female,20,Middle class,In a Relationship,Unmarried,Family,4,3.3,No,Critical,13993,Dhaka,1
+Female,22,Middle class,Single,Unmarried,Bachelor,8,3.66,Yes,Normal,16357,Rajshahi,0
+Male,24,Middle class,Single,Unmarried,Bachelor,7,3.38,Yes,Abnormal,16000,Dhaka,1
+Female,23,Middle class,Single,Unmarried,Family,2,3.53,No,Normal,8800,Mymensingh,0
+Female,23,Middle class,Single,Unmarried,Family,2,2.82,No,Abnormal,5500,Dhaka,1
+Male,28,Middle class,Single,Unmarried,Family,1,3.47,No,Normal,10618,Rangpur,0
+Male,19,Rich class,Single,Unmarried,Family,2,3.8,Yes,Normal,25000,Mymensingh,0
+Female,24,Middle class,In a Relationship,Unmarried,Bachelor,8,3.57,Yes,Normal,10000,Rajshahi,0
+Male,21,Middle class,Single,Unmarried,Family,4,3.2,No,Abnormal,17860,Khulna,1
+Male,21,Lower Middle class,Single,Unmarried,Bachelor,2,3.69,Yes,Normal,3850,Dhaka,0
+Female,23,Rich class,In a Relationship,Unmarried,Family,11,2.83,Yes,Abnormal,7934,Rangpur,0
+Male,21,Middle class,Single,Unmarried,Bachelor,8,3.89,Yes,Normal,10130,Dhaka,0
+Female,24,Lower Middle class,Single,Unmarried,Bachelor,5,3.17,Yes,Normal,7900,Sylhet,0
+Female,19,Rich class,In a Relationship,Unmarried,Family,5,2.5,Yes,Good,26279,Dhaka,0
+Female,23,Middle class,Single,Unmarried,Family,2,3.9,Yes,Abnormal,7900,Sylhet,1
+Female,26,Lower Middle class,In a Relationship,Married,Bachelor,7,3.75,No,Normal,8401,Khulna,0
+Male,22,Rich class,In a Relationship,Married,Bachelor,4,4.0,Yes,Normal,29123,Rajshahi,0
+Male,21,Lower Middle class,Single,Unmarried,Bachelor,3,3.13,Yes,Good,10000,Dhaka,0
+Male,23,Lower Middle class,Single,Unmarried,Bachelor,7,3.58,Yes,Good,9878,Khulna,0
+Female,26,Middle class,In a Relationship,Unmarried,Family,5,3.0,No,Abnormal,11991,Khulna,0
+Female,24,Middle class,In a Relationship,Married,Bachelor,8,3.78,Yes,Critical,15007,Khulna,1
+Male,23,Middle class,Single,Unmarried,Bachelor,5,3.16,Yes,Abnormal,7500,Sylhet,1
+Female,24,Lower Middle class,In a Relationship,Unmarried,Bachelor,8,3.34,No,Good,2728,Mymensingh,0
+Female,21,Lower Middle class,In a Relationship,Married,Bachelor,5,3.55,No,Abnormal,9500,Rangpur,0
+Female,24,Lower Middle class,In a Relationship,Married,Bachelor,6,3.0,Yes,Abnormal,9500,Chittagong,0
+Male,21,Lower Middle class,Single,Unmarried,Bachelor,8,3.3,Yes,Good,11800,Dhaka,0
+Female,24,Lower Middle class,Single,Unmarried,Family,8,3.11,No,Critical,7800,Rangpur,1
+Male,18,Middle class,Complicated,Unmarried,Family,4,2.95,Yes,Good,5200,Mymensingh,0
+Male,20,Lower Middle class,Single,Unmarried,Bachelor,5,3.89,Yes,Normal,6969,Rajshahi,0
+Female,25,Middle class,Single,Unmarried,Family,10,3.76,Yes,Good,5900,Dhaka,0
+Female,21,Middle class,Single,Unmarried,Bachelor,2,3.0,Yes,Abnormal,12608,Khulna,1
+Male,20,Lower Middle class,Single,Unmarried,Bachelor,5,3.7,Yes,Good,5000,Rajshahi,0
+Female,21,Rich class,In a Relationship,Married,Bachelor,7,3.95,No,Critical,24570,Barisal,1
+Female,23,Rich class,In a Relationship,Unmarried,Family,7,2.73,Yes,Normal,7100,Rangpur,0
+Male,27,Middle class,In a Relationship,Unmarried,Bachelor,2,3.0,Yes,Abnormal,17880,Khulna,0
+Male,21,Middle class,Single,Unmarried,Bachelor,7,3.0,Yes,Critical,15562,Rangpur,1
+Female,22,Rich class,In a Relationship,Unmarried,Bachelor,3,3.89,Yes,Good,23633,Barisal,0
+Female,24,Lower Middle class,Single,Unmarried,Family,3,3.93,Yes,Critical,5600,Sylhet,1
+Male,27,Middle class,In a Relationship,Married,Bachelor,7,3.0,Yes,Abnormal,15163,Khulna,0
+Female,23,Middle class,Single,Unmarried,Family,6,2.87,No,Normal,9300,Dhaka,1
+Male,22,Middle class,In a Relationship,Unmarried,Bachelor,7,3.35,No,Abnormal,16344,Khulna,0
+Male,21,Lower Middle class,Single,Unmarried,Bachelor,1,2.65,Yes,Critical,9696,Mymensingh,1
+Female,25,Middle class,In a Relationship,Married,Family,7,3.95,Yes,Normal,5500,Dhaka,0
+Female,27,Lower Middle class,Complicated,Married,Family,8,3.48,Yes,Good,4680,Rajshahi,0
+Male,24,Middle class,Single,Unmarried,Family,7,3.6,No,Normal,8000,Dhaka,0
+Female,20,Middle class,In a Relationship,Unmarried,Family,5,3.75,Yes,Good,6000,Chittagong,0
+Female,23,Middle class,Single,Unmarried,Family,9,3.44,Yes,Good,5800,Dhaka,0
+Female,20,Rich class,Single,Married,Bachelor,4,3.75,No,Abnormal,28396,Barisal,0
+Female,24,Middle class,In a Relationship,Unmarried,Bachelor,5,3.56,Yes,Abnormal,17141,Sylhet,0
+Male,21,Middle class,Single,Unmarried,Family,3,3.54,Yes,Good,10000,Dhaka,0
+Female,21,Rich class,In a Relationship,Unmarried,Bachelor,8,3.9,Yes,Normal,6000,Dhaka,0
+Female,22,Middle class,Single,Unmarried,Bachelor,8,3.0,No,Normal,11804,Dhaka,1
+Female,23,Middle class,In a Relationship,Unmarried,Bachelor,5,2.57,Yes,Normal,2500,Barisal,0
+Female,24,Lower Middle class,Single,Unmarried,Family,9,3.24,No,Critical,7000,Mymensingh,1
+Female,23,Middle class,In a Relationship,Unmarried,Bachelor,7,3.45,No,Good,18672,Sylhet,0
+Female,23,Lower Middle class,In a Relationship,Married,Family,9,3.75,Yes,Critical,8500,Dhaka,1
+Female,23,Middle class,In a Relationship,Unmarried,Bachelor,8,3.8,No,Critical,16316,Khulna,1
+Female,22,Lower Middle class,Single,Unmarried,Bachelor,5,3.22,No,Critical,9624,Dhaka,1
+Male,21,Rich class,Single,Married,Bachelor,5,3.29,No,Normal,20505,Rajshahi,0
+Male,20,Lower Middle class,In a Relationship,Unmarried,Bachelor,2,3.76,Yes,Normal,20000,Chittagong,0
+Female,20,Lower Middle class,Single,Unmarried,Bachelor,2,3.39,Yes,Good,8710,Rajshahi,0
+Male,21,Middle class,In a Relationship,Unmarried,Family,4,2.6,Yes,Normal,14687,Khulna,0
+Female,23,Middle class,Single,Unmarried,Bachelor,4,2.89,Yes,Critical,16769,Barisal,1
+Male,21,Lower Middle class,Single,Unmarried,Bachelor,4,3.63,Yes,Normal,9856,Khulna,0
+Female,20,Middle class,Single,Unmarried,Family,3,3.58,No,Critical,16884,Chittagong,1
+Male,26,Middle class,Single,Unmarried,Family,7,3.88,Yes,Normal,16136,Mymensingh,0
+Female,23,Middle class,Single,Unmarried,Family,4,3.85,No,Good,5500,Dhaka,0
+Female,21,Rich class,Single,Unmarried,Family,5,3.5,No,Normal,29231,Chittagong,0
+Female,20,Lower Middle class,In a Relationship,Unmarried,Bachelor,3,3.16,Yes,Normal,9000,Rajshahi,0
+Female,23,Middle class,Single,Unmarried,Family,3,3.08,No,Abnormal,8100,Dhaka,1
+Male,22,Lower Middle class,Single,Unmarried,Bachelor,2,4.0,Yes,Abnormal,3396,Rajshahi,1
+Female,24,Lower Middle class,Single,Married,Bachelor,7,3.78,No,Normal,5800,Rangpur,0
+Male,21,Lower Middle class,Single,Unmarried,Bachelor,4,3.75,Yes,Normal,4150,Dhaka,0
+Male,23,Middle class,Single,Unmarried,Bachelor,7,2.99,Yes,Normal,10000,Sylhet,0
+Male,21,Middle class,Single,Unmarried,Bachelor,2,3.89,Yes,Good,14361,Barisal,0
+Female,18,Lower Middle class,Single,Married,Family,7,3.82,Yes,Abnormal,8463,Dhaka,0
+Female,23,Middle class,Single,Unmarried,Family,4,3.84,No,Critical,7200,Barisal,1
+Female,24,Middle class,In a Relationship,Unmarried,Bachelor,7,3.75,Yes,Normal,11818,Mymensingh,0
+Female,24,Lower Middle class,Single,Unmarried,Family,7,3.88,No,Critical,1262,Barisal,1
+Female,24,Middle class,Single,Unmarried,Family,6,3.66,Yes,Good,6015,Dhaka,0
+Female,20,Lower Middle class,Single,Unmarried,Family,2,2.78,Yes,Normal,5000,Chittagong,0
+Female,21,Middle class,In a Relationship,Unmarried,Bachelor,2,3.2,No,Good,16258,Dhaka,0
+Male,23,Middle class,Single,Unmarried,Bachelor,9,2.79,Yes,Normal,4000,Sylhet,0
+Male,20,Lower Middle class,In a Relationship,Unmarried,Family,3,2.3,Yes,Good,11000,Dhaka,0
+Female,21,Lower Middle class,In a Relationship,Unmarried,Family,5,3.9,Yes,Normal,4890,Chittagong,0
+Male,23,Middle class,Single,Unmarried,Family,5,3.59,Yes,Normal,18870,Dhaka,0
+Male,23,Middle class,Single,Unmarried,Bachelor,6,2.91,Yes,Critical,9000,Sylhet,1
+Male,20,Middle class,Single,Unmarried,Bachelor,5,3.6,Yes,Normal,14180,Dhaka,0
+Male,20,Middle class,Single,Unmarried,Bachelor,3,3.78,Yes,Abnormal,13906,Khulna,1
+Female,21,Lower Middle class,Complicated,Separated,Bachelor,3,3.85,Yes,Good,7215,Barisal,0
+Male,22,Lower Middle class,Single,Unmarried,Family,5,3.78,Yes,Abnormal,8000,Chittagong,1
+Male,25,Middle class,Single,Unmarried,Bachelor,6,3.9,No,Normal,4000,Mymensingh,0
+Female,23,Middle class,Single,Unmarried,Family,4,3.68,No,Normal,7300,Dhaka,0
+Female,25,Middle class,In a Relationship,Married,Family,6,3.43,Yes,Good,8900,Dhaka,0
+Male,23,Middle class,Single,Unmarried,Bachelor,3,3.91,Yes,Good,9500,Sylhet,0
+Female,21,Lower Middle class,In a Relationship,Unmarried,Bachelor,8,3.34,No,Normal,9500,Rajshahi,0
+Female,24,Middle class,Single,Unmarried,Family,8,2.65,Yes,Normal,10971,Rangpur,0
+Female,23,Middle class,Single,Married,Family,7,3.25,No,Critical,13312,Khulna,1
+Female,20,Middle class,In a Relationship,Unmarried,Bachelor,2,2.6,No,Critical,15958,Khulna,1
+Female,25,Middle class,In a Relationship,Married,Family,7,3.51,Yes,Normal,6000,Dhaka,0
+Male,21,Lower Middle class,Single,Unmarried,Bachelor,2,3.89,Yes,Normal,3000,Dhaka,0
+Female,19,Middle class,In a Relationship,Unmarried,Bachelor,2,3.78,Yes,Abnormal,12000,Rangpur,0
+Male,26,Middle class,Single,Unmarried,Family,6,3.0,Yes,Good,12000,Sylhet,0
+Female,23,Middle class,In a Relationship,Unmarried,Family,5,3.46,No,Normal,7500,Rajshahi,0
+Female,25,Middle class,Single,Unmarried,Family,9,3.69,Yes,Critical,13200,Sylhet,1
+Male,21,Middle class,Single,Unmarried,Bachelor,8,3.46,Yes,Normal,19576,Khulna,0
+Female,21,Middle class,Single,Married,Family,8,2.82,No,Abnormal,14649,Sylhet,1
+Female,24,Middle class,In a Relationship,Unmarried,Bachelor,8,3.67,No,Good,12000,Chittagong,0
+Female,23,Middle class,Single,Unmarried,Family,9,2.71,No,Critical,8700,Mymensingh,1
+Female,23,Middle class,Single,Unmarried,Family,8,3.89,Yes,Normal,6400,Dhaka,0
+Female,21,Rich class,In a Relationship,Unmarried,Bachelor,4,3.56,No,Good,21000,Rajshahi,0
+Female,23,Middle class,Single,Unmarried,Family,4,3.4,Yes,Good,6200,Dhaka,0
+Female,22,Middle class,Single,Unmarried,Bachelor,5,3.26,No,Good,11000,Rajshahi,0
+Male,21,Middle class,Single,Unmarried,Family,2,4.0,Yes,Abnormal,18742,Dhaka,1
+Female,25,Middle class,In a Relationship,Married,Family,8,2.6,Yes,Good,6575,Dhaka,0
+Female,25,Middle class,In a Relationship,Married,Family,8,2.54,Yes,Good,6458,Dhaka,0
+Male,20,Lower Middle class,Single,Unmarried,Bachelor,2,3.14,Yes,Abnormal,3047,Rajshahi,1
+Female,20,Lower Middle class,In a Relationship,Unmarried,Bachelor,5,2.39,Yes,Abnormal,4500,Dhaka,0
+Male,21,Lower Middle class,Single,Unmarried,Bachelor,5,3.53,Yes,Good,6800,Dhaka,0
+Male,23,Middle class,Single,Unmarried,Bachelor,11,3.15,Yes,Abnormal,6900,Barisal,1
+Male,21,Lower Middle class,Single,Unmarried,Bachelor,4,3.31,Yes,Good,5699,Mymensingh,0
+Male,23,Lower Middle class,Single,Unmarried,Bachelor,8,3.0,Yes,Abnormal,8715,Sylhet,1
+Female,23,Middle class,Single,Unmarried,Family,9,3.82,No,Normal,8600,Dhaka,0
+Male,23,Middle class,Single,Married,Bachelor,2,3.0,No,Abnormal,14936,Chittagong,0
+Male,20,Lower Middle class,Single,Unmarried,Bachelor,2,4.0,Yes,Normal,113,Rajshahi,0
+Male,23,Middle class,Single,Married,Bachelor,5,3.0,Yes,Good,10991,Barisal,0
+Female,20,Middle class,In a Relationship,Unmarried,Bachelor,5,3.16,Yes,Critical,20000,Dhaka,1
+Female,23,Rich class,In a Relationship,Unmarried,Family,4,3.46,Yes,Good,25814,Rangpur,0
+Male,22,Lower Middle class,Single,Unmarried,Bachelor,11,3.94,Yes,Critical,6700,Rangpur,1
+Female,25,Middle class,In a Relationship,Married,Family,2,3.7,Yes,Abnormal,9800,Dhaka,0
+Male,22,Lower Middle class,Single,Unmarried,Bachelor,6,3.67,Yes,Normal,4000,Rangpur,0
+Male,24,Lower Middle class,Single,Unmarried,Bachelor,6,3.54,Yes,Normal,4900,Mymensingh,0
+Male,22,Middle class,In a Relationship,Unmarried,Bachelor,3,3.5,No,Abnormal,18631,Khulna,0
+Male,23,Middle class,Single,Unmarried,Bachelor,6,3.15,Yes,Normal,16600,Sylhet,0
+Female,26,Middle class,In a Relationship,Unmarried,Bachelor,6,3.55,Yes,Abnormal,15161,Khulna,0
+Male,22,Middle class,In a Relationship,Unmarried,Bachelor,5,3.89,Yes,Normal,12000,Dhaka,0
+Female,23,Middle class,Single,Unmarried,Family,4,2.97,Yes,Good,4000,Dhaka,0
+Male,23,Lower Middle class,Single,Unmarried,Bachelor,5,3.68,Yes,Abnormal,7752,Barisal,1
+Male,24,Lower Middle class,Single,Unmarried,Bachelor,9,3.5,Yes,Abnormal,4700,Mymensingh,1
+Female,23,Middle class,Single,Unmarried,Family,7,3.48,Yes,Normal,8100,Dhaka,0
+Male,24,Middle class,Single,Unmarried,Bachelor,3,3.47,Yes,Normal,10500,Sylhet,0
+Male,23,Middle class,Single,Unmarried,Bachelor,8,3.41,Yes,Good,7000,Sylhet,0
+Male,21,Lower Middle class,Single,Unmarried,Bachelor,2,3.54,Yes,Normal,6700,Dhaka,0
+Female,20,Middle class,Single,Unmarried,Bachelor,9,3.75,Yes,Normal,15746,Khulna,0
+Female,24,Rich class,Single,Unmarried,Family,4,3.4,No,Normal,21349,Mymensingh,0
+Male,23,Middle class,Single,Unmarried,Bachelor,4,3.25,Yes,Abnormal,16800,Sylhet,1
+Female,24,Middle class,Single,Unmarried,Bachelor,9,3.8,Yes,Normal,17244,Chittagong,0
+Female,23,Middle class,Single,Unmarried,Bachelor,5,3.5,Yes,Normal,16226,Rangpur,0
+Female,20,Middle class,In a Relationship,Unmarried,Bachelor,4,3.13,No,Good,13710,Khulna,0
+Male,21,Lower Middle class,Single,Unmarried,Bachelor,4,3.7,Yes,Normal,12800,Dhaka,0
+Male,20,Middle class,Single,Unmarried,Bachelor,3,4.0,Yes,Normal,12022,Dhaka,0
+Female,22,Rich class,Single,Unmarried,Family,2,2.9,No,Critical,26000,Chittagong,1
+Female,23,Middle class,In a Relationship,Unmarried,Family,4,3.93,No,Abnormal,14174,Khulna,0
+Female,22,Middle class,Single,Unmarried,Bachelor,8,3.43,Yes,Critical,10113,Chittagong,1
+Female,25,Middle class,In a Relationship,Unmarried,Family,5,2.6,Yes,Abnormal,18956,Khulna,0
+Female,23,Middle class,In a Relationship,Unmarried,Family,2,3.75,No,Good,19036,Chittagong,0
+Male,27,Middle class,Single,Unmarried,Family,5,3.59,Yes,Normal,4867,Mymensingh,0
+Male,20,Middle class,Single,Unmarried,Family,6,3.49,Yes,Abnormal,11432,Khulna,1
+Female,26,Middle class,Single,Unmarried,Bachelor,9,3.25,Yes,Normal,19000,Rangpur,0
+Male,20,Middle class,Single,Unmarried,Bachelor,2,3.56,No,Normal,13446,Khulna,0
+Male,21,Lower Middle class,Single,Unmarried,Bachelor,3,4.0,Yes,Good,8900,Barisal,0
+Female,25,Middle class,In a Relationship,Married,Family,3,3.91,Yes,Normal,9500,Dhaka,0
+Female,20,Rich class,Single,Unmarried,Bachelor,4,3.45,Yes,Critical,26533,Chittagong,1
+Male,21,Middle class,Single,Unmarried,Bachelor,2,3.88,Yes,Normal,18187,Dhaka,0
+Male,23,Middle class,Single,Unmarried,Bachelor,8,3.79,Yes,Good,8900,Sylhet,0
+Female,24,Lower Middle class,Single,Unmarried,Family,6,3.62,No,Normal,6000,Chittagong,0
+Male,23,Middle class,Single,Unmarried,Bachelor,5,3.69,Yes,Normal,8400,Sylhet,0
+Male,25,Middle class,Single,Unmarried,Bachelor,11,3.78,Yes,Good,13674,Barisal,0
+Male,21,Lower Middle class,Single,Unmarried,Family,10,3.26,Yes,Good,8556,Chittagong,0
+Male,25,Middle class,Single,Unmarried,Family,8,3.01,Yes,Abnormal,17717,Dhaka,1
+Male,23,Middle class,Single,Unmarried,Bachelor,3,3.05,Yes,Normal,8800,Sylhet,0
+Female,26,Rich class,Single,Unmarried,Bachelor,4,3.74,Yes,Normal,30866,Chittagong,0
+Male,25,Middle class,Single,Unmarried,Bachelor,6,2.98,Yes,Critical,15585,Khulna,1
+Female,22,Middle class,In a Relationship,Unmarried,Bachelor,9,3.23,Yes,Normal,19787,Rajshahi,0
+Male,23,Middle class,Single,Unmarried,Family,5,3.7,Yes,Normal,5000,Barisal,0
+Female,20,Lower Middle class,Single,Unmarried,Bachelor,2,2.9,Yes,Abnormal,1946,Rajshahi,1
+Female,24,Lower Middle class,Single,Unmarried,Family,2,3.89,No,Normal,7500,Rangpur,0
+Male,20,Middle class,Single,Unmarried,Bachelor,5,3.67,Yes,Abnormal,13364,Khulna,1
+Male,18,Rich class,Single,Unmarried,Family,2,3.31,No,Abnormal,24000,Mymensingh,0
+Male,25,Middle class,Single,Unmarried,Bachelor,5,2.74,Yes,Critical,5700,Sylhet,1
+Male,21,Lower Middle class,Single,Unmarried,Bachelor,4,3.95,Yes,Good,9875,Khulna,0
+Male,25,Middle class,Single,Separated,Bachelor,9,3.3,No,Normal,19698,Dhaka,0
+Female,24,Lower Middle class,In a Relationship,Unmarried,Family,4,3.6,No,Good,8900,Barisal,0
+Female,23,Middle class,Single,Unmarried,Family,9,3.67,Yes,Good,4300,Rangpur,0
+Female,20,Rich class,Single,Unmarried,Bachelor,9,3.89,No,Good,26000,Rangpur,0
+Male,24,Rich class,Single,Unmarried,Bachelor,5,3.47,No,Abnormal,28761,Sylhet,0
+Female,23,Rich class,In a Relationship,Married,Family,7,3.05,Yes,Normal,20358,Dhaka,0
+Female,21,Middle class,In a Relationship,Unmarried,Bachelor,1,3.6,Yes,Good,4000,Chittagong,0
+Female,24,Middle class,Single,Unmarried,Family,11,3.5,No,Critical,12000,Mymensingh,1
+Female,25,Middle class,In a Relationship,Separated,Family,10,3.8,Yes,Good,11029,Khulna,0
+Male,23,Lower Middle class,In a Relationship,Married,Family,2,2.74,No,Normal,8000,Sylhet,0
+Male,23,Middle class,Single,Unmarried,Bachelor,7,3.82,Yes,Normal,18523,Dhaka,0
+Female,23,Middle class,Single,Unmarried,Family,4,3.25,No,Good,6400,Rajshahi,0
+Male,21,Middle class,Single,Unmarried,Bachelor,9,3.56,No,Normal,19826,Rangpur,0
+Female,21,Middle class,Single,Unmarried,Bachelor,5,3.98,Yes,Abnormal,17320,Dhaka,1
+Male,22,Middle class,In a Relationship,Unmarried,Bachelor,1,3.45,Yes,Normal,12000,Chittagong,0
+Male,21,Lower Middle class,Single,Unmarried,Bachelor,5,3.9,Yes,Normal,11200,Dhaka,0
+Female,20,Rich class,Single,Unmarried,Bachelor,9,4.0,Yes,Normal,26419,Mymensingh,0
+Female,25,Middle class,In a Relationship,Unmarried,Family,8,3.7,Yes,Normal,5000,Khulna,0
+Male,27,Lower Middle class,Complicated,Unmarried,Family,10,3.28,Yes,Good,3422,Rajshahi,0
+Female,25,Middle class,Single,Unmarried,Family,5,2.33,No,Abnormal,12700,Chittagong,1
+Male,20,Middle class,Single,Unmarried,Family,2,3.9,No,Abnormal,13512,Khulna,1
+Male,21,Lower Middle class,Single,Unmarried,Bachelor,3,3.28,Yes,Good,1800,Dhaka,0
+Male,23,Middle class,Single,Married,Family,3,3.55,No,Critical,18436,Chittagong,1
+Male,18,Lower Middle class,Single,Unmarried,Family,3,3.8,Yes,Normal,672,Khulna,0
+Female,21,Middle class,In a Relationship,Unmarried,Bachelor,5,3.65,Yes,Critical,17000,Dhaka,1
+Female,25,Lower Middle class,In a Relationship,Unmarried,Bachelor,4,3.7,Yes,Normal,9768,Chittagong,0
+Male,21,Lower Middle class,Single,Unmarried,Bachelor,4,3.18,Yes,Normal,7300,Dhaka,0
+Male,22,Middle class,Single,Unmarried,Family,4,3.59,No,Normal,18187,Dhaka,0
+Female,23,Middle class,Single,Unmarried,Family,5,3.48,No,Abnormal,3400,Mymensingh,1
+Female,22,Rich class,In a Relationship,Unmarried,Family,6,3.89,Yes,Good,7683,Sylhet,0
+Female,23,Middle class,Single,Unmarried,Family,8,3.76,No,Normal,8800,Dhaka,0
+Female,21,Middle class,In a Relationship,Unmarried,Family,8,4.0,No,Normal,11000,Khulna,0
+Male,21,Lower Middle class,Single,Unmarried,Bachelor,4,3.51,Yes,Normal,2950,Dhaka,0
+Female,26,Lower Middle class,In a Relationship,Separated,Family,6,3.0,No,Normal,6750,Rajshahi,0

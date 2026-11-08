@@ -29,7 +29,7 @@ pip install -r requirements.txt
 
 ### Dataset
 
-The raw CSV from [Kaggle: Student Depression Detection Dataset](https://www.kaggle.com/datasets/mkhoirulmustaqim/student-depression-detection-dataset) is included at `data/raw/Student_Depression_Dataset.csv`, so no download is needed. Do not edit it. Cleaned data in `data/processed/` is not committed; create it with `python -m src.data`.
+The raw CSV from [Kaggle: Student Depression Detection Dataset](https://www.kaggle.com/datasets/mkhoirulmustaqim/student-depression-detection-dataset) is included at `data/raw/Student_Depression_Dataset.csv`, so no download is needed. Do not edit it. The cleaned data and the fixed train/test split are also committed in `data/processed/` (`clean.csv`, `train.csv`, `test.csv`). If `src/data.py` or `src/config.py` changes, re-run `python -m src.data` and commit the updated files.
 
 ## Run
 
@@ -49,7 +49,7 @@ streamlit run app/streamlit_app.py
 
 ```
 data/raw/            original Kaggle CSV (committed, never edited)
-data/processed/      cleaned data
+data/processed/      cleaned data and fixed train/test split (committed)
 src/                 config, data, features, eda, baseline, train, evaluate, interpret
 models/              saved pipelines (not committed)
 reports/figures/     generated plots
