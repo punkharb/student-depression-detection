@@ -19,6 +19,8 @@ Full project rules (methodology, leakage rules, experiment grid, decision log) l
 
 ## Setup
 
+Requires Python 3.11 or newer (the pinned pandas 3.x does not support 3.10).
+
 ```bash
 python -m venv .venv
 source .venv/bin/activate        # Windows: .venv\Scripts\activate
@@ -31,7 +33,10 @@ Download from [Kaggle: Student Depression Detection Dataset](https://www.kaggle.
 
 ## Run
 
+Run `python -m src.data` first: it cleans the raw CSV and writes the fixed train/test split to `data/processed/`.
+
 ```bash
+python -m src.data
 python -m src.eda
 python -m src.baseline
 python -m src.train
