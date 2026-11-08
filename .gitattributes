@@ -1,0 +1,2 @@
+# Keep data files byte-for-byte identical to the original (no line-ending conversion).
+*.csv -text

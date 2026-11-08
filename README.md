@@ -29,7 +29,7 @@ pip install -r requirements.txt
 
 ### Dataset
 
-Download from [Kaggle: Student Depression Detection Dataset](https://www.kaggle.com/datasets/mkhoirulmustaqim/student-depression-detection-dataset) and put the CSV in `data/raw/`. Do not edit it and do not commit it (`data/` is git-ignored).
+The raw CSV from [Kaggle: Student Depression Detection Dataset](https://www.kaggle.com/datasets/mkhoirulmustaqim/student-depression-detection-dataset) is included at `data/raw/Student_Depression_Dataset.csv`, so no download is needed. Do not edit it. Cleaned data in `data/processed/` is not committed; create it with `python -m src.data`.
 
 ## Run
 
@@ -48,7 +48,7 @@ streamlit run app/streamlit_app.py
 ## Layout
 
 ```
-data/raw/            original Kaggle CSV (not committed)
+data/raw/            original Kaggle CSV (committed, never edited)
 data/processed/      cleaned data
 src/                 config, data, features, eda, baseline, train, evaluate, interpret
 models/              saved pipelines (not committed)

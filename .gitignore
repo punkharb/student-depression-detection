@@ -5,10 +5,9 @@ __pycache__/
 venv/
 .ipynb_checkpoints/
 
-# Data: raw CSV is downloaded by each member (see README), never committed
-data/raw/*
+# Data: the raw Kaggle CSV in data/raw/ is committed (team decision, see CLAUDE.md).
+# Processed data is regenerated with `python -m src.data`, so it is not committed.
 data/processed/*
-!data/raw/.gitkeep
 !data/processed/.gitkeep
 
 # Fitted models: not committed unless the team asks (CLAUDE.md)

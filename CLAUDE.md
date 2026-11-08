@@ -184,5 +184,6 @@ Plus the majority-class baseline (predicts `No` for everyone: about 73% accuracy
 - EDA runs on the full cleaned dataset: it only describes the data and selects no model settings
 - The fixed split is saved to `data/processed/train.csv` / `test.csv` (via `python -m src.data`) so every member uses the same rows
 - Python 3.11+ is required (pinned pandas 3.x); tested on 3.14
+- The raw CSV is committed in `data/raw/` (Kawin's request) so every member has the same file without a Kaggle download; `data/processed/` stays git-ignored
 
 Add new decisions here with a one-line reason.
