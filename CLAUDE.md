@@ -192,5 +192,7 @@ Plus the majority-class baseline (predicts `No` for everyone: about 73% accuracy
 - Tuning changed (team approval, 2026-11-12): hyperparameters by ROC-AUC with randomized search (40 draws), threshold tuned for F1 instead of `refit="recall"` at 0.5. Recall at 0.5 rewarded over-regularised models. F2 was tried first but on no_health it said Yes to almost everyone (precision 0.32, accuracy 0.43), so F1 was chosen
 - SMOTE replaced by SMOTENC before preprocessing: plain SMOTE on one-hot columns created fractional categories
 - Baseline uses `DummyClassifier(strategy="most_frequent")`, not `"prior"`: it predicts `No` (Yes probability 0) at any threshold, so it can never flip to predicting Yes for everyone
+- Success check in `src/evaluate.py` uses the best CV-F1 model per feature set (the demo model), not the best test score, so the test set never selects a model
+- Evaluation figures in `reports/figures/` (confusion matrices, ROC curves) are committed (team request) so they can go straight into the slides; result CSVs and models stay uncommitted
 
 Add new decisions here with a one-line reason.
