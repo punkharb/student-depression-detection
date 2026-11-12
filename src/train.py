@@ -1,13 +1,24 @@
 """Train and tune Logistic Regression, Random Forest and XGBoost.
 
-Grid: 3 models x 2 imbalance methods (class weights, SMOTE) x 2 feature sets
-(full, no_health). Each combination is tuned with stratified 5-fold CV on the
-training set only, scored on recall, precision, F1, ROC-AUC and accuracy, and
-refit on recall (CLAUDE.md > Recall as the tuning objective). The test set is
-never loaded here; it belongs to src/evaluate.py.
+Grid: 3 models x 2 imbalance methods (class weights, SMOTENC) x 2 feature sets
+(full, no_health). For each combination, on the training set only:
 
-All preprocessing and SMOTE sit inside an imblearn Pipeline, so they are
-fitted on the training folds only.
+1. Randomized search, stratified 5-fold CV, selects hyperparameters by ROC-AUC
+   (how well the model ranks Yes above No, independent of any cut-off).
+2. The decision threshold is tuned to maximise F1 with an inner stratified
+   5-fold CV (sklearn TunedThresholdClassifierCV). This raises recall over the
+   default 0.5 cut-off without collapsing to "Yes for everyone" (F2 did that
+   on no_health: precision 0.32, accuracy 0.43).
+3. Scores come from an outer 5-fold CV in which the threshold is re-tuned on
+   every outer training fold, so recall / precision / F1 are not
+   optimistic about the threshold. The hyperparameters were chosen on these
+   same folds, so all scores (ROC-AUC most of all) carry the usual
+   CV-selection optimism. The untouched test set (src/evaluate.py) gives the
+   unbiased estimate.
+
+All preprocessing and SMOTENC sit inside an imblearn Pipeline, so they are
+fitted on the training folds only. The test set is never loaded here; it
+belongs to src/evaluate.py.
 
 Run:  python -m src.train                    (all models)
       python -m src.train --models logreg    (subset)
@@ -23,11 +34,14 @@ import argparse
 import joblib
 import numpy as np
 import pandas as pd
-from imblearn.over_sampling import SMOTE
+from imblearn.over_sampling import SMOTENC
+from scipy.stats import loguniform, randint, uniform
 from imblearn.pipeline import Pipeline
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.linear_model import LogisticRegression
-from sklearn.model_selection import GridSearchCV
+from sklearn.model_selection import RandomizedSearchCV, TunedThresholdClassifierCV, cross_validate
+from sklearn.compose import ColumnTransformer
+from sklearn.impute import SimpleImputer
 from xgboost import XGBClassifier
 
 from src import config as C
@@ -37,21 +51,30 @@ from src.features import build_preprocessor
 MODELS = ("logreg", "random_forest", "xgboost")
 IMBALANCE_METHODS = ("class_weight", "smote")
 
-# Hyperparameter grids (keys are prefixed with "model__" when searched).
-PARAM_GRIDS = {
-    "logreg": {"C": [0.01, 0.1, 1.0, 10.0]},
+N_ITER = 40  # random configurations tried per model / imbalance / feature set
+
+# Hyperparameter search spaces (prefixed with "model__" when searched).
+PARAM_DISTS = {
+    "logreg": {
+        "C": loguniform(1e-3, 1e2),
+        "l1_ratio": uniform(0, 1),  # 0 = L2, 1 = L1, between = elastic net
+    },
     "random_forest": {
-        "n_estimators": [200, 500],
-        "max_depth": [None, 5, 10],
-        "min_samples_leaf": [1, 5],
+        "max_depth": [None, 4, 6, 8, 12, 16],
+        "min_samples_leaf": randint(1, 30),
+        "max_features": ["sqrt", 0.3, 0.5, 0.8, 1.0],
     },
     "xgboost": {
-        "n_estimators": [200, 400],
-        "max_depth": [3, 5],
-        "learning_rate": [0.05, 0.1],
-        "subsample": [0.8, 1.0],
+        "n_estimators": randint(100, 800),
+        "max_depth": randint(2, 7),
+        "learning_rate": loguniform(0.01, 0.3),
+        "subsample": uniform(0.6, 0.4),
+        "colsample_bytree": uniform(0.5, 0.5),
+        "min_child_weight": loguniform(1, 20),
+        "reg_lambda": loguniform(0.1, 10),
     },
 }
+SMOTE_DISTS = {"k_neighbors": [3, 5, 7, 10], "sampling_strategy": [0.5, 0.75, 1.0]}
 
 
 class FoldBalancedXGB(XGBClassifier):
@@ -68,11 +91,13 @@ def _make_model(model: str, balanced: bool):
     seed = C.RANDOM_STATE
     if model == "logreg":
         return LogisticRegression(
-            class_weight="balanced" if balanced else None, max_iter=2000, random_state=seed
+            class_weight="balanced" if balanced else None,
+            solver="saga", max_iter=5000, random_state=seed,
         )
     if model == "random_forest":
         return RandomForestClassifier(
-            class_weight="balanced" if balanced else None, n_jobs=-1, random_state=seed
+            n_estimators=300, class_weight="balanced" if balanced else None,
+            n_jobs=-1, random_state=seed,
         )
     if model == "xgboost":
         return (FoldBalancedXGB if balanced else XGBClassifier)(
@@ -87,22 +112,46 @@ def build_pipeline(
     feature_set: str,
     flag_cols: list[str] | tuple[str, ...] = (),
 ) -> Pipeline:
-    """Unfitted imblearn Pipeline: preprocessing -> [SMOTE] -> classifier.
+    """Unfitted imblearn Pipeline.
 
-    imbalance:  "class_weight" (class_weight="balanced", or for XGBoost
-                scale_pos_weight = neg/pos of each training fold) or "smote"
-                (SMOTE on the training folds only, no class weights).
+    imbalance:  "class_weight": preprocessing -> classifier with
+                class_weight="balanced" (XGBoost: scale_pos_weight = neg/pos of
+                each training fold).
+                "smote": select feature-set columns (median-impute numerics)
+                -> SMOTENC -> preprocessing -> classifier, no class weights.
+                SMOTENC runs on the raw columns so synthetic students get real
+                category labels, and only sees the feature set's columns
+                (no_health never uses Health_condition).
     """
     if imbalance not in IMBALANCE_METHODS:
         raise ValueError(f"Unknown imbalance method {imbalance!r}; use one of {IMBALANCE_METHODS}")
     balanced = imbalance == "class_weight"
-    steps = [("prep", build_preprocessor(feature_set, scale=model == "logreg", flag_cols=flag_cols))]
+    steps = []
     if not balanced:
-        # ponytail: plain SMOTE on encoded features (as the issue asks); one-hot
-        # columns get fractional values. SMOTENC is the upgrade if that matters.
-        steps.append(("smote", SMOTE(random_state=C.RANDOM_STATE)))
-    steps.append(("model", _make_model(model, balanced)))
+        cols = C.FEATURE_SETS[feature_set] + list(flag_cols)
+        numeric = [c for c in cols if c in C.NUMERIC_COLS]
+        categorical = [c for c in cols if c not in numeric]
+        # SMOTENC cannot take NaN (flag-and-impute branch), so impute here too.
+        select = ColumnTransformer(
+            [("num", SimpleImputer(strategy="median"), numeric), ("keep", "passthrough", categorical)],
+            remainder="drop", verbose_feature_names_out=False,
+        ).set_output(transform="pandas")
+        steps += [
+            ("select", select),
+            ("smote", SMOTENC(categorical_features=categorical, random_state=C.RANDOM_STATE)),
+        ]
+    steps += [
+        ("prep", build_preprocessor(feature_set, scale=model == "logreg", flag_cols=flag_cols)),
+        ("model", _make_model(model, balanced)),
+    ]
     return Pipeline(steps)
+
+
+def search_space(model: str, imbalance: str) -> dict:
+    space = {f"model__{k}": v for k, v in PARAM_DISTS[model].items()}
+    if imbalance == "smote":
+        space.update({f"smote__{k}": v for k, v in SMOTE_DISTS.items()})
+    return space
 
 
 def tune(
@@ -111,35 +160,39 @@ def tune(
     feature_set: str,
     X: pd.DataFrame,
     y: pd.Series,
-    param_grid: dict | None = None,
-) -> tuple[GridSearchCV, dict]:
-    """Grid search with stratified 5-fold CV on the training data, refit on recall.
+    n_iter: int = N_ITER,
+) -> tuple[TunedThresholdClassifierCV, dict]:
+    """Search hyperparameters (ROC-AUC), then tune the threshold (F1). Training data only.
 
-    Returns the fitted search and one results row: the best configuration's
-    mean / std for every CV metric, so precision and F1 always sit next to recall.
+    Returns the fitted threshold-tuned model and one results row with nested-CV
+    mean / std for every metric, so precision and F1 always sit next to recall.
     """
     pipe = build_pipeline(model, imbalance, feature_set, flag_columns(X))
-    grid = param_grid if param_grid is not None else PARAM_GRIDS[model]
-    search = GridSearchCV(
-        pipe,
-        {f"model__{k}": v for k, v in grid.items()},
-        scoring=C.CV_SCORING,
-        refit="recall",
-        cv=C.make_cv(),
-        n_jobs=-1,
+    search = RandomizedSearchCV(
+        pipe, search_space(model, imbalance), n_iter=n_iter, scoring="roc_auc",
+        cv=C.make_cv(), random_state=C.RANDOM_STATE, n_jobs=-1,
     )
     search.fit(X, y)
 
-    i = search.best_index_
-    res = search.cv_results_
+    final = TunedThresholdClassifierCV(search.best_estimator_, scoring=C.CV_SCORING["f1"], cv=C.make_cv())
+    # Outer CV re-tunes the threshold on each outer training fold; hyperparameters
+    # were selected on these folds, so scores keep the usual selection optimism.
+    scores = cross_validate(final, X, y, cv=C.make_cv(), scoring=C.CV_SCORING, n_jobs=-1)
+    final.fit(X, y)
+
     row = {"model": model, "imbalance": imbalance, "feature_set": feature_set}
     for metric in C.CV_METRICS:
-        row[f"{metric}_mean"] = res[f"mean_test_{metric}"][i]
-        row[f"{metric}_std"] = res[f"std_test_{metric}"][i]
-    row["best_params"] = {k.removeprefix("model__"): v for k, v in search.best_params_.items()}
+        row[f"{metric}_mean"] = scores[f"test_{metric}"].mean()
+        row[f"{metric}_std"] = scores[f"test_{metric}"].std()
+    row["threshold"] = final.best_threshold_
+    row["search_roc_auc"] = search.best_score_
+    row["best_params"] = {
+        k.removeprefix("model__"): (round(v, 4) if isinstance(v, float) else v)
+        for k, v in search.best_params_.items()
+    }
     # A model that says Yes to everyone has precision = Yes rate; flag anything at or below it.
     row["low_precision"] = bool(row["precision_mean"] <= y.mean())
-    return search, row
+    return final, row
 
 
 def merge_results(old: pd.DataFrame, new: pd.DataFrame, models: list[str]) -> pd.DataFrame:
@@ -165,12 +218,13 @@ def main(argv: list[str] | None = None) -> None:
     for model in args.models:
         for imbalance in IMBALANCE_METHODS:
             for feature_set in C.FEATURE_SETS:
-                search, row = tune(model, imbalance, feature_set, X_train, y_train)
-                joblib.dump(search.best_estimator_, model_path(model, imbalance, feature_set))
+                final, row = tune(model, imbalance, feature_set, X_train, y_train)
+                joblib.dump(final, model_path(model, imbalance, feature_set))
                 rows.append(row)
                 print(f"  {model:13s} {imbalance:12s} {feature_set:9s} "
                       f"recall {row['recall_mean']:.3f}  precision {row['precision_mean']:.3f}  "
-                      f"f1 {row['f1_mean']:.3f}  roc_auc {row['roc_auc_mean']:.3f}  {row['best_params']}")
+                      f"f1 {row['f1_mean']:.3f}  roc_auc {row['roc_auc_mean']:.3f}  "
+                      f"threshold {row['threshold']:.2f}  {row['best_params']}")
                 if row["low_precision"]:
                     print(f"    WARNING: precision {row['precision_mean']:.3f} is no better than "
                           f"predicting Yes for everyone. Flag to the team.")
@@ -185,4 +239,8 @@ def main(argv: list[str] | None = None) -> None:
 
 
 if __name__ == "__main__":
-    main()
+    # Run main() from the importable src.train module, not __main__, so pickled
+    # models reference src.train.FoldBalancedXGB and load in evaluate.py / the demo.
+    from src.train import main as _main
+
+    _main()

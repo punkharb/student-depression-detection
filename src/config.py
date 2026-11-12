@@ -35,7 +35,8 @@ CV_FOLDS = 5
 
 # ---------------------------------------------------------------- cross-validation
 # Shared by src/baseline.py and src/train.py so every model is scored the same
-# way. train.py passes CV_SCORING to the search with refit="recall".
+# way. train.py selects hyperparameters by ROC-AUC, tunes the threshold for F1,
+# and reports every CV_SCORING metric.
 # Recall is the priority metric; accuracy is only ever reported next to the others.
 CV_METRICS = ["recall", "precision", "f1", "roc_auc", "accuracy"]
 CV_SCORING = {
