@@ -87,6 +87,7 @@ models/                # saved fitted pipelines
 reports/
   figures/             # all generated plots
   results/             # metric tables (CSV)
+  interpretation_summary.md  # generated takeaway from src/interpret.py
 app/
   streamlit_app.py     # demo
 requirements.txt
@@ -194,5 +195,8 @@ Plus the majority-class baseline (predicts `No` for everyone: about 73% accuracy
 - Baseline uses `DummyClassifier(strategy="most_frequent")`, not `"prior"`: it predicts `No` (Yes probability 0) at any threshold, so it can never flip to predicting Yes for everyone
 - Success check in `src/evaluate.py` uses the best CV-F1 model per feature set (the demo model), not the best test score, so the test set never selects a model
 - Evaluation figures in `reports/figures/` (confusion matrices, ROC curves) are committed (team request) so they can go straight into the slides; result CSVs and models stay uncommitted
+- Interpretation (`src/interpret.py`) explains, per feature set and model type, the imbalance variant with the best CV F1 (never a test score), so the slides show one model per type
+- Importance: LR coefficients, RF impurity / XGBoost gain (one-hot levels summed per feature), plus permutation importance (ROC-AUC drop) on held-out 5-fold CV folds of the training set, so the three models are comparable and deep forests are not inflated by memorised rows; the test set stays in `src/evaluate.py`
+- `reports/interpretation_summary.md` (generated takeaway) and the interpretation figures are committed, like the evaluation figures; `lr_coefficients.csv` / `importances.csv` stay uncommitted
 
 Add new decisions here with a one-line reason.
