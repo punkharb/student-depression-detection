@@ -20,7 +20,8 @@ class BuildPipelineTest(unittest.TestCase):
             self.assertIsInstance(pipe, ImbPipeline)
             self.assertNotIn("smote", pipe.named_steps)
             clf = pipe.named_steps["model"]
-            self.assertEqual(clf.class_weight, "balanced")
+            if model != "xgboost":
+                self.assertEqual(clf.class_weight, "balanced")
             self.assertEqual(clf.get_params()["random_state"], C.RANDOM_STATE)
 
     def test_smote_variant_resamples_inside_pipeline_with_seed(self):
@@ -32,10 +33,25 @@ class BuildPipelineTest(unittest.TestCase):
             clf = pipe.named_steps["model"]
             # No double correction: SMOTE runs alone, without class weights.
             self.assertIn(clf.get_params().get("class_weight"), (None,))
+            self.assertIn(clf.get_params().get("scale_pos_weight"), (None, 1, 1.0))
 
     def test_only_logistic_regression_is_scaled(self):
         self.assertTrue(_scales_numeric(train.build_pipeline("logreg", "smote", "full")))
         self.assertFalse(_scales_numeric(train.build_pipeline("random_forest", "smote", "full")))
+        self.assertFalse(_scales_numeric(train.build_pipeline("xgboost", "smote", "full")))
+
+
+class XGBoostWeightTest(unittest.TestCase):
+    def test_scale_pos_weight_comes_from_the_data_it_is_fitted_on(self):
+        import pandas as pd
+        from src.data import load_train
+
+        X, y = load_train()
+        X, y = X.iloc[:400], y.iloc[:400]  # a "fold" with its own Yes rate
+        pipe = train.build_pipeline("xgboost", "class_weight", "full")
+        pipe.set_params(model__n_estimators=5).fit(X, y)
+        expected = (y == 0).sum() / (y == 1).sum()
+        self.assertAlmostEqual(pipe.named_steps["model"].get_params()["scale_pos_weight"], expected)
 
 
 class MergeResultsTest(unittest.TestCase):
