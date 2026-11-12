@@ -1,4 +1,4 @@
-"""Train and tune Logistic Regression.
+"""Train and tune Logistic Regression and Random Forest.
 
 Grid: models x 2 imbalance methods (class weights, SMOTE) x 2 feature sets
 (full, no_health). Each combination is tuned with stratified 5-fold CV on the
@@ -24,6 +24,7 @@ import joblib
 import pandas as pd
 from imblearn.over_sampling import SMOTE
 from imblearn.pipeline import Pipeline
+from sklearn.ensemble import RandomForestClassifier
 from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import GridSearchCV
 
@@ -31,12 +32,17 @@ from src import config as C
 from src.data import flag_columns, load_train
 from src.features import build_preprocessor
 
-MODELS = ("logreg",)
+MODELS = ("logreg", "random_forest")
 IMBALANCE_METHODS = ("class_weight", "smote")
 
 # Hyperparameter grids (keys are prefixed with "model__" when searched).
 PARAM_GRIDS = {
     "logreg": {"C": [0.01, 0.1, 1.0, 10.0]},
+    "random_forest": {
+        "n_estimators": [200, 500],
+        "max_depth": [None, 5, 10],
+        "min_samples_leaf": [1, 5],
+    },
 }
 
 
@@ -45,6 +51,10 @@ def _make_model(model: str, balanced: bool):
     if model == "logreg":
         return LogisticRegression(
             class_weight="balanced" if balanced else None, max_iter=2000, random_state=seed
+        )
+    if model == "random_forest":
+        return RandomForestClassifier(
+            class_weight="balanced" if balanced else None, n_jobs=-1, random_state=seed
         )
     raise ValueError(f"Unknown model {model!r}; use one of {MODELS}")
 
