@@ -114,7 +114,7 @@ Follow this pipeline. Do not change a step without asking the team.
    - Map the actual labels in the CSV onto these orders. If a feature's labels have no clear order (or include values like "other"), use one-hot for that feature instead and note the change in `src/config.py`.
 3. **Scale**: standardise numeric features for Logistic Regression only. Tree models use unscaled features.
 4. **Split**: stratified 80% train / 20% test, with the single fixed seed from `src/config.py`. The same test set is used for every model and feature set.
-5. **Tune**: stratified 5-fold CV with grid or randomized search, **optimising recall**.
+5. **Tune**: stratified 5-fold CV with randomized search, selecting hyperparameters by **ROC-AUC**; then tune the decision threshold for **F1** with an inner stratified 5-fold CV (`TunedThresholdClassifierCV`). Report scores from an outer CV that re-tunes the threshold on each training fold.
 
 The random seed is **42** (`RANDOM_STATE = 42` in `src/config.py`).
 
@@ -130,13 +130,14 @@ The random seed is **42** (`RANDOM_STATE = 42` in `src/config.py`).
 Try both methods and compare them:
 
 - `class_weight="balanced"` (or `scale_pos_weight` for XGBoost)
-- SMOTE on training folds only
+- SMOTE on training folds only (SMOTENC on the raw feature-set columns, so synthetic rows keep real category labels)
 
 ### Recall as the tuning objective
 
 Recall is the priority metric, but a model that predicts `Yes` for everyone gets 100% recall. To guard against this:
 
-- Use multi-metric scoring in CV (recall, precision, F1, ROC-AUC) with `refit="recall"`.
+- Do not pick hyperparameters by recall at the default 0.5 threshold: select by ROC-AUC, then choose the threshold by F1 on training folds.
+- Score every model in CV on recall, precision, F1 and ROC-AUC.
 - Always log precision and F1 next to recall in CV results.
 - If the chosen configuration has very low precision, flag it to the team instead of silently accepting it.
 
@@ -162,7 +163,7 @@ Plus the majority-class baseline (predicts `No` for everyone: about 73% accuracy
 - Output: predicted risk (Yes / No) and probability, shown next to the baseline prediction.
 - Load a saved pipeline from `models/`; do not retrain inside the app.
 - Show a clear note that this is a screening aid, not a diagnosis.
-- Model choice: for each feature set, use the configuration with the best **CV recall** (from `src/train.py`), never the best test-set score.
+- Model choice: for each feature set, use the configuration with the best **CV F1** (from `src/train.py`), never the best test-set score.
 - The app has a toggle between the `no_health` model (default) and the `full` model, so the presentation can show how much Health condition changes the prediction.
 - Save both chosen pipelines to `models/` as `demo_no_health.joblib` and `demo_full.joblib`.
 
@@ -188,6 +189,9 @@ Plus the majority-class baseline (predicts `No` for everyone: about 73% accuracy
 - `data/processed/` (clean.csv, train.csv, test.csv) is also committed (Kawin's request) so everyone has the same split without running anything; re-run `python -m src.data` and commit if data.py or config.py changes
 - CV scoring and splitter are shared in `src/config.py` (`CV_SCORING`, `make_cv()`) so the baseline and every tuned model use identical CV
 - Baselines are saved as pipelines including the preprocessor, so evaluate and the demo pass raw features to every model the same way
+- Tuning changed (team approval, 2026-11-12): hyperparameters by ROC-AUC with randomized search (40 draws), threshold tuned for F1 instead of `refit="recall"` at 0.5. Recall at 0.5 rewarded over-regularised models. F2 was tried first but on no_health it said Yes to almost everyone (precision 0.32, accuracy 0.43), so F1 was chosen
+- SMOTE replaced by SMOTENC before preprocessing: plain SMOTE on one-hot columns created fractional categories
+- Demo picks the best CV F1 model per feature set (was CV recall), to match the new tuning objective
 - Baseline uses `DummyClassifier(strategy="most_frequent")`, not `"prior"`: it predicts `No` (Yes probability 0) at any threshold, so it can never flip to predicting Yes for everyone
 
 Add new decisions here with a one-line reason.
