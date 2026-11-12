@@ -33,19 +33,20 @@ class BuildPipelineTest(unittest.TestCase):
             # No double correction: SMOTE runs alone, without class weights.
             self.assertIn(clf.get_params().get("class_weight"), (None,))
 
-    def test_logistic_regression_is_scaled(self):
+    def test_only_logistic_regression_is_scaled(self):
         self.assertTrue(_scales_numeric(train.build_pipeline("logreg", "smote", "full")))
+        self.assertFalse(_scales_numeric(train.build_pipeline("random_forest", "smote", "full")))
 
 
 class MergeResultsTest(unittest.TestCase):
     def test_rerun_replaces_only_the_requested_models(self):
         import pandas as pd
 
-        old = pd.DataFrame({"model": ["logreg", "other"], "recall_mean": [0.1, 0.2]})
+        old = pd.DataFrame({"model": ["logreg", "random_forest"], "recall_mean": [0.1, 0.2]})
         new = pd.DataFrame({"model": ["logreg"], "recall_mean": [0.9]})
         merged = train.merge_results(old, new, ["logreg"])
         self.assertEqual(sorted(zip(merged["model"], merged["recall_mean"])),
-                         [("logreg", 0.9), ("other", 0.2)])
+                         [("logreg", 0.9), ("random_forest", 0.2)])
 
 
 class TuneTest(unittest.TestCase):
