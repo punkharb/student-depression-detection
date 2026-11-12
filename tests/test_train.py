@@ -114,6 +114,44 @@ class MergeResultsTest(unittest.TestCase):
                          [("logreg", 0.9), ("random_forest", 0.2)])
 
 
+class PickDemoTest(unittest.TestCase):
+    def test_picks_best_cv_f1_per_feature_set(self):
+        import pandas as pd
+
+        table = pd.DataFrame({
+            "model": ["logreg", "xgboost", "random_forest", "logreg"],
+            "imbalance": ["smote", "class_weight", "smote", "class_weight"],
+            "feature_set": ["full", "full", "no_health", "no_health"],
+            "recall_mean": [0.99, 0.90, 0.70, 0.95],  # highest recall is NOT the pick
+            "f1_mean": [0.80, 0.95, 0.55, 0.50],
+        })
+        picks = train.pick_demo(table)
+        self.assertEqual(set(picks), {"full", "no_health"})
+        self.assertEqual((picks["full"]["model"], picks["full"]["imbalance"]), ("xgboost", "class_weight"))
+        self.assertEqual((picks["no_health"]["model"], picks["no_health"]["imbalance"]),
+                         ("random_forest", "smote"))
+
+
+class SaveDemoModelsTest(unittest.TestCase):
+    def test_missing_source_model_copies_nothing(self):
+        import tempfile
+        from pathlib import Path
+        from unittest import mock
+
+        import pandas as pd
+
+        table = pd.DataFrame({
+            "model": ["xgboost", "random_forest"], "imbalance": ["class_weight", "smote"],
+            "feature_set": ["full", "no_health"], "recall_mean": [0.9, 0.7],
+            "precision_mean": [0.9, 0.4], "f1_mean": [0.9, 0.5],
+        })
+        with tempfile.TemporaryDirectory() as tmp, mock.patch.object(C, "MODELS_DIR", Path(tmp)):
+            (Path(tmp) / "xgboost_class_weight_full.joblib").write_bytes(b"x")  # no_health source missing
+            with self.assertRaises(FileNotFoundError):
+                train.save_demo_models(table)
+            self.assertFalse((Path(tmp) / "demo_full.joblib").exists())  # demo pair not half-updated
+
+
 class TuneTest(unittest.TestCase):
     def test_returns_threshold_tuned_model_with_nested_cv_scores(self):
         from sklearn.model_selection import TunedThresholdClassifierCV

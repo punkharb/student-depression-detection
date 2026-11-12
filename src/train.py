@@ -23,13 +23,16 @@ belongs to src/evaluate.py.
 Run:  python -m src.train                    (all models)
       python -m src.train --models logreg    (subset)
 Table  -> reports/results/cv_results.csv
-Models -> models/<model>_<imbalance>_<feature_set>.joblib
+Models -> models/<model>_<imbalance>_<feature_set>.joblib (all 12, for src/evaluate.py)
+Demo   -> models/demo_full.joblib, models/demo_no_health.joblib (best CV F1 per
+          feature set; `python -m src.train --demo-only` re-picks without training)
 
 Reminder: the model is a screening aid, not a diagnosis.
 """
 from __future__ import annotations
 
 import argparse
+import shutil
 
 import joblib
 import numpy as np
@@ -204,10 +207,41 @@ def model_path(model: str, imbalance: str, feature_set: str):
     return C.MODELS_DIR / f"{model}_{imbalance}_{feature_set}.joblib"
 
 
+def pick_demo(table: pd.DataFrame) -> dict[str, pd.Series]:
+    """Best configuration per feature set by CV F1 (never by a test-set score)."""
+    best = table.loc[table.groupby("feature_set")["f1_mean"].idxmax()]
+    return {row["feature_set"]: row for _, row in best.iterrows()}
+
+
+def save_demo_models(table: pd.DataFrame) -> None:
+    """Copy each feature set's chosen pipeline to models/demo_<feature_set>.joblib."""
+    picks = pick_demo(table)
+    sources = {fs: model_path(row["model"], row["imbalance"], fs) for fs, row in picks.items()}
+    missing = [str(p) for p in sources.values() if not p.exists()]
+    if missing:  # check all first, so the demo pair is never half-updated
+        raise FileNotFoundError(f"Chosen model file(s) missing, run python -m src.train: {missing}")
+    for feature_set, row in picks.items():
+        src = sources[feature_set]
+        dst = C.MODELS_DIR / f"demo_{feature_set}.joblib"
+        shutil.copyfile(src, dst)
+        print(f"  demo    models/{dst.name} <- {src.name}  "
+              f"(CV recall {row['recall_mean']:.3f}, precision {row['precision_mean']:.3f}, "
+              f"F1 {row['f1_mean']:.3f})")
+        if row.get("low_precision", False):
+            print("    WARNING: chosen demo model has low precision. Flag to the team.")
+
+
 def main(argv: list[str] | None = None) -> None:
     parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     parser.add_argument("--models", nargs="+", choices=MODELS, default=list(MODELS))
+    parser.add_argument("--demo-only", action="store_true",
+                        help="re-pick the demo models from the existing cv_results.csv, no training")
     args = parser.parse_args(argv)
+
+    path = C.RESULTS_DIR / "cv_results.csv"
+    if args.demo_only:
+        save_demo_models(pd.read_csv(path))
+        return
 
     X_train, y_train = load_train()  # training set only, never the test set
     C.RESULTS_DIR.mkdir(parents=True, exist_ok=True)
@@ -229,12 +263,12 @@ def main(argv: list[str] | None = None) -> None:
                     print(f"    WARNING: precision {row['precision_mean']:.3f} is no better than "
                           f"predicting Yes for everyone. Flag to the team.")
 
-    path = C.RESULTS_DIR / "cv_results.csv"
     table = pd.DataFrame(rows)
     if path.exists():
         table = merge_results(pd.read_csv(path), table, args.models)
     table.to_csv(path, index=False)
     print(f"  table   {path.relative_to(C.ROOT)}")
+    save_demo_models(table)
     print(f"\n{C.SCREENING_NOTE}.")
 
 
