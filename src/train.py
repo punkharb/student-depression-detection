@@ -1,6 +1,6 @@
-"""Train and tune Logistic Regression and Random Forest.
+"""Train and tune Logistic Regression, Random Forest and XGBoost.
 
-Grid: models x 2 imbalance methods (class weights, SMOTE) x 2 feature sets
+Grid: 3 models x 2 imbalance methods (class weights, SMOTE) x 2 feature sets
 (full, no_health). Each combination is tuned with stratified 5-fold CV on the
 training set only, scored on recall, precision, F1, ROC-AUC and accuracy, and
 refit on recall (CLAUDE.md > Recall as the tuning objective). The test set is
@@ -21,18 +21,20 @@ from __future__ import annotations
 import argparse
 
 import joblib
+import numpy as np
 import pandas as pd
 from imblearn.over_sampling import SMOTE
 from imblearn.pipeline import Pipeline
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import GridSearchCV
+from xgboost import XGBClassifier
 
 from src import config as C
 from src.data import flag_columns, load_train
 from src.features import build_preprocessor
 
-MODELS = ("logreg", "random_forest")
+MODELS = ("logreg", "random_forest", "xgboost")
 IMBALANCE_METHODS = ("class_weight", "smote")
 
 # Hyperparameter grids (keys are prefixed with "model__" when searched).
@@ -43,7 +45,23 @@ PARAM_GRIDS = {
         "max_depth": [None, 5, 10],
         "min_samples_leaf": [1, 5],
     },
+    "xgboost": {
+        "n_estimators": [200, 400],
+        "max_depth": [3, 5],
+        "learning_rate": [0.05, 0.1],
+        "subsample": [0.8, 1.0],
+    },
 }
+
+
+class FoldBalancedXGB(XGBClassifier):
+    """XGBoost with scale_pos_weight = negatives / positives of the data passed
+    to fit, i.e. of each CV training fold (never the validation fold)."""
+
+    def fit(self, X, y, **kwargs):
+        y = np.asarray(y)
+        self.set_params(scale_pos_weight=(y == 0).sum() / (y == 1).sum())
+        return super().fit(X, y, **kwargs)
 
 
 def _make_model(model: str, balanced: bool):
@@ -56,6 +74,10 @@ def _make_model(model: str, balanced: bool):
         return RandomForestClassifier(
             class_weight="balanced" if balanced else None, n_jobs=-1, random_state=seed
         )
+    if model == "xgboost":
+        return (FoldBalancedXGB if balanced else XGBClassifier)(
+            eval_metric="logloss", tree_method="hist", n_jobs=-1, random_state=seed,
+        )
     raise ValueError(f"Unknown model {model!r}; use one of {MODELS}")
 
 
@@ -67,7 +89,8 @@ def build_pipeline(
 ) -> Pipeline:
     """Unfitted imblearn Pipeline: preprocessing -> [SMOTE] -> classifier.
 
-    imbalance:  "class_weight" (class_weight="balanced") or "smote"
+    imbalance:  "class_weight" (class_weight="balanced", or for XGBoost
+                scale_pos_weight = neg/pos of each training fold) or "smote"
                 (SMOTE on the training folds only, no class weights).
     """
     if imbalance not in IMBALANCE_METHODS:
